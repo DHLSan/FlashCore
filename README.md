@@ -1,6 +1,7 @@
 # FlashCore
 
-Multiprocessor systems-on-chips (MPSoCs) have widely adopted in many different applications [1] and adaptive capabilities of a reconfigurable-computing and especially MPSoC-based reconfigurable
+Multiprocessor systems-on-chips (MPSoCs) have widely adopted in many different applications [1] 
+and adaptive capabilities of a reconfigurable-computing and especially MPSoC-based reconfigurable
 systems are promising [2] over the last past years. An MPSoC system consists of mainly many
 processors/cores/CPUs and also different peripherals such as specialized digital hardware accelerators
 and they aim especially to perform a given domain of tasks in parallel. By employing a multi-core
@@ -37,11 +38,14 @@ every existing challenges.
 
 [1] Janac, K. C. (2021). Network‐on‐Chip (NoC): The Technology that Enabled Multi‐processor
 Systems‐on‐Chip (MPSoCs). Multi‐Processor System‐on‐Chip 1: Architectures, 195-225.
+
 [2] Lemonnier, F., Millet, P., Almeida, G. M., Hübner, M., Becker, J., Pillement, S., ... & Lemaire, R.
 (2012, July). Towards future adaptive multiprocessor systems-on-chip: An innovative approach for
 flexible architectures. In 2012 International Conference on Embedded Computer Systems (SAMOS) (pp.
 228-235). IEEE.
+
 [3] Acharya, G. P., & Rani, M. A. (2018). FPGA Prototyping of Micro-Blaze soft processor based Multi-
 core System on Chip. International Journal of Engineering & Technology, 7(2.16), 57-60.
+
 [4] Wolf, W. (2004, July). The future of multiprocessor systems-on-chips. In Proceedings. 41st Design
 Automation Conference, 2004. (pp. 681-685). IEEE.
