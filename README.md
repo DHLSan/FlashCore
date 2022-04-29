@@ -36,6 +36,8 @@ In conclusion, incorporating everything into our custom Microblaze-based MPSoC a
 design process can be difficult, and our main motivation is to overcome this design process considering
 every existing challenges.
 
+## References
+
 [1] Janac, K. C. (2021). Network‐on‐Chip (NoC): The Technology that Enabled Multi‐processor
 Systems‐on‐Chip (MPSoCs). Multi‐Processor System‐on‐Chip 1: Architectures, 195-225.
 
