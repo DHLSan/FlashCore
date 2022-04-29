@@ -39,6 +39,17 @@ design process can be difficult, and our main motivation is to overcome this des
 every existing challenges.
 
 # In Progress Work
+soon to be updated.
+
+## **_Participants_** ##
+- Zeynep Bilge
+  - Contact: zeynepbilge@eskisehir.edu.tr
+- Berkehan Altın
+  - Contact: berkehanaltin@eskisehir.edu.tr
+  
+## **_Supervisor_** ##
+ - Ismail San
+    - Contact: isan@eskisehir.edu.tr
 
 ## References
 
