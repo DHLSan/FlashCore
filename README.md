@@ -1,5 +1,7 @@
 # FlashCore
 
+## Abstract
+
 Multiprocessor systems-on-chips (MPSoCs) have widely adopted in many different applications [1] 
 and adaptive capabilities of a reconfigurable-computing and especially MPSoC-based reconfigurable
 systems are promising [2] over the last past years. An MPSoC system consists of mainly many
@@ -35,6 +37,8 @@ hierarchy and efficiency of the scheduling infrastructure are the parts of the p
 In conclusion, incorporating everything into our custom Microblaze-based MPSoC approach, complex
 design process can be difficult, and our main motivation is to overcome this design process considering
 every existing challenges.
+
+# In Progress Work
 
 ## References
 
