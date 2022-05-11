@@ -1,0 +1,26 @@
+17:26:21 **** Auto Build of configuration Debug for project MB_app ****
+make all 
+'Building file: ../src/MB_ex.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MB_ex.o" -I../../MB_app_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/MB_ex.d" -MT"src/MB_ex.o" -o "src/MB_ex.o" "../src/MB_ex.c"
+../src/MB_ex.c: In function 'main':
+../src/MB_ex.c:32:2: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+  sleep(1);
+  ^~~~~
+  strsep
+'Finished building: ../src/MB_ex.c'
+' '
+'Building target: MB_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB_app_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MB_app.elf"  ./src/MB_ex.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MB_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB_app.elf  |tee "MB_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4590	    356	   3118	   8064	   1f80	MB_app.elf
+'Finished building: MB_app.elf.size'
+' '
+
+17:26:22 Build Finished (took 941ms)
+

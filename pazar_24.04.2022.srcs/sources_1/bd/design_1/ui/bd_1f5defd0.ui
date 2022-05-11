@@ -1,0 +1,68 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 460 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 740 -defaultsOSRD
+preplace port leds_8bits -pg 1 -y 970 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 690 -defaultsOSRD
+preplace inst microblaze_1_axi_periph -pg 1 -lvl 4 -y 180 -defaultsOSRD
+preplace inst microblaze_1_local_memory1 -pg 1 -lvl 4 -y 430 -defaultsOSRD
+preplace inst mailbox_0 -pg 1 -lvl 7 -y 580 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -y 760 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 1240 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 1 -y 560 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 5 -y 970 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -y 780 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 2 -y 550 -defaultsOSRD
+preplace inst mutex_0 -pg 1 -lvl 7 -y 830 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 3 -y 580 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 6 -y 360 -defaultsOSRD
+preplace inst microblaze_1 -pg 1 -lvl 3 -y 350 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -y 1100 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 760 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 600 -defaultsOSRD
+preplace netloc microblaze_1_M_AXI_DC 1 3 1 1140
+preplace netloc microblaze_1_M_AXI_DP 1 3 1 1130
+preplace netloc ps7_0_axi_periph_M02_AXI 1 6 1 2260
+preplace netloc processing_system7_0_DDR 1 5 3 NJ 520 2240J 460 NJ
+preplace netloc rst_ps7_0_100M_mb_reset 1 1 3 380 670 660 460 NJ
+preplace netloc rst_ps7_0_100M_bus_struct_reset 1 1 3 360 1130 NJ 1130 NJ
+preplace netloc microblaze_0_intr 1 1 1 NJ
+preplace netloc microblaze_1_M_AXI_IC 1 3 1 1150
+preplace netloc mdm_1_MBDEBUG_1 1 2 1 650
+preplace netloc processing_system7_0_M_AXI_GP0 1 5 1 1910
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 6 370 690 NJ 690 1190 1010 1510 810 1950 800 2300
+preplace netloc microblaze_0_Clk 1 0 7 20 660 360 660 640 450 1170 1000 1480 780 1930 660 2290
+preplace netloc microblaze_0_intc_axi 1 1 4 400 700 NJ 700 1180J 520 1470
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 4 1 1490
+preplace netloc microblaze_0_interrupt 1 2 1 N
+preplace netloc microblaze_1_DLMB 1 3 1 1180
+preplace netloc microblaze_0_ilmb_1 1 3 1 1140
+preplace netloc microblaze_0_M_AXI_DC 1 3 1 N
+preplace netloc microblaze_0_axi_dp 1 3 1 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 6 1 2300
+preplace netloc xlconcat_0_dout 1 4 1 1500J
+preplace netloc microblaze_1_axi_periph_M00_AXI 1 4 3 NJ 180 NJ 180 2270
+preplace netloc processing_system7_0_FIXED_IO 1 5 3 1920J 690 NJ 690 NJ
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 3 N 750 1960J 680 2280J
+preplace netloc microblaze_0_M_AXI_IC 1 3 1 N
+preplace netloc mailbox_0_Interrupt_0 1 3 5 1160 1180 NJ 1180 NJ 1180 NJ 1180 2560
+preplace netloc mailbox_0_Interrupt_1 1 0 8 20 650 390J 680 NJ 680 1150J 510 1490J 740 1940J 670 2250J 470 2570
+preplace netloc microblaze_1_ILMB 1 3 1 1160
+preplace netloc microblaze_0_dlmb_1 1 3 1 1160
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 3 N 770 NJ 770 NJ
+preplace netloc axi_gpio_1_GPIO 1 5 3 NJ 970 NJ 970 NJ
+preplace netloc microblaze_0_debug 1 2 1 670
+preplace netloc mdm_1_debug_sys_rst 1 0 3 20 860 NJ 860 660
+preplace netloc reset_rtl_1 1 0 1 N
+levelinfo -pg 1 0 190 520 900 1330 1710 2100 2430 2590 -top 0 -bot 1300
+"
+}
+{
+   "da_axi4_cnt":"21",
+   "da_board_cnt":"4",
+   "da_clkrst_cnt":"3",
+   "da_mb_cnt":"4",
+   "da_ps7_cnt":"2"
+}

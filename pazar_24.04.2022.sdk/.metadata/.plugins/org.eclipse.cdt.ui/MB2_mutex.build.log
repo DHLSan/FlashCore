@@ -1,0 +1,54 @@
+11:22:07 **** Auto Build of configuration Debug for project MB2_mutex ****
+make all 
+'Building file: ../src/m2_mutex.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/m2_mutex.o" -I../../MB2_mutex_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/m2_mutex.d" -MT"src/m2_mutex.o" -o "src/m2_mutex.o" "../src/m2_mutex.c"
+In file included from ../../MB2_mutex_bsp/microblaze_1/include/xmutex.h:127:0,
+                 from ../src/m2_mutex.c:9:
+../src/m2_mutex.c: In function 'main':
+../../MB2_mutex_bsp/microblaze_1/include/xmutex_hw.h:145:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  Xil_Out32(((BaseAddress) + XMutex_Offset(MutexNumber) +     \
+            ^
+../src/m2_mutex.c:28:7: note: in expansion of macro 'XMutex_WriteReg'
+       XMutex_WriteReg(&Mutex, 0, 0, cal);
+       ^~~~~~~~~~~~~~~
+In file included from ../../MB2_mutex_bsp/microblaze_1/include/xmutex_hw.h:62:0,
+                 from ../../MB2_mutex_bsp/microblaze_1/include/xmutex.h:127,
+                 from ../src/m2_mutex.c:9:
+../../MB2_mutex_bsp/microblaze_1/include/xil_io.h:219:20: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XMutex * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~
+In file included from ../../MB2_mutex_bsp/microblaze_1/include/xmutex.h:127:0,
+                 from ../src/m2_mutex.c:9:
+../../MB2_mutex_bsp/microblaze_1/include/xmutex_hw.h:145:12: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  Xil_Out32(((BaseAddress) + XMutex_Offset(MutexNumber) +     \
+            ^
+../src/m2_mutex.c:32:7: note: in expansion of macro 'XMutex_WriteReg'
+       XMutex_WriteReg(&Mutex, 0, 0, cal);
+       ^~~~~~~~~~~~~~~
+In file included from ../../MB2_mutex_bsp/microblaze_1/include/xmutex_hw.h:62:0,
+                 from ../../MB2_mutex_bsp/microblaze_1/include/xmutex.h:127,
+                 from ../src/m2_mutex.c:9:
+../../MB2_mutex_bsp/microblaze_1/include/xil_io.h:219:20: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XMutex * {aka struct <anonymous> *}'
+ static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~
+../src/m2_mutex.c:34:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+'Finished building: ../src/m2_mutex.c'
+' '
+'Building target: MB2_mutex.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB2_mutex_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MB2_mutex.elf"  ./src/m2_mutex.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MB2_mutex.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB2_mutex.elf  |tee "MB2_mutex.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3226	    304	   3118	   6648	   19f8	MB2_mutex.elf
+'Finished building: MB2_mutex.elf.size'
+' '
+
+11:22:08 Build Finished (took 780ms)
+

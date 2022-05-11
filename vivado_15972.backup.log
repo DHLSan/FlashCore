@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 11 11:11:31 2022
+# Process ID: 15972
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/pazar_24.04.2022
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5656 C:\Users\berke\Desktop\OKUL\SoC\SoC_Project_Final\pazar_24.04.2022\pazar_24.04.2022.xpr
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/pazar_24.04.2022/vivado.log
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/pazar_24.04.2022\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/pazar_24.04.2022/pazar_24.04.2022.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/berke/Desktop/OKUL/SoC/Downloads/error_drc_23_20_suppress.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 804.133 ; gain = 173.242
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 11:12:45 2022...

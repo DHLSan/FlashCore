@@ -1,0 +1,40 @@
+11:21:54 **** Auto Build of configuration Debug for project MB1_mutex ****
+make all 
+'Building file: ../src/m1_mutex.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/m1_mutex.o" -I../../MB1_mutex_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/m1_mutex.d" -MT"src/m1_mutex.o" -o "src/m1_mutex.o" "../src/m1_mutex.c"
+In file included from ../../MB1_mutex_bsp/microblaze_0/include/xmutex.h:127:0,
+                 from ../src/m1_mutex.c:9:
+../src/m1_mutex.c: In function 'main':
+../../MB1_mutex_bsp/microblaze_0/include/xmutex_hw.h:126:11: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  Xil_In32((BaseAddress) + XMutex_Offset(MutexNumber) + (RegOffset))
+           ^
+../src/m1_mutex.c:32:12: note: in expansion of macro 'XMutex_ReadReg'
+      cal = XMutex_ReadReg(&Mutex, 0, 0);
+            ^~~~~~~~~~~~~~
+In file included from ../../MB1_mutex_bsp/microblaze_0/include/xmutex_hw.h:62:0,
+                 from ../../MB1_mutex_bsp/microblaze_0/include/xmutex.h:127,
+                 from ../src/m1_mutex.c:9:
+../../MB1_mutex_bsp/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XMutex * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+../src/m1_mutex.c:34:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+'Finished building: ../src/m1_mutex.c'
+' '
+'Building target: MB1_mutex.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MB1_mutex_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MB1_mutex.elf"  ./src/m1_mutex.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MB1_mutex.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_mutex.elf  |tee "MB1_mutex.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4202	    364	   3122	   7688	   1e08	MB1_mutex.elf
+'Finished building: MB1_mutex.elf.size'
+' '
+
+11:21:55 Build Finished (took 724ms)
+
