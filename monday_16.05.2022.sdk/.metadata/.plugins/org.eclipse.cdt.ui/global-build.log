@@ -1,0 +1,373 @@
+16:46:27 **** Build of project uBlaze0_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/mutex_v4_3/src"
+make -C microblaze_0/libsrc/mutex_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/mutex_v4_3/src"
+make -C microblaze_0/libsrc/mutex_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling mutex"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+
+**** Build of configuration Debug for project uBlaze0 ****
+
+Nothing to build for project uBlaze0
+16:47:12 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx_2018/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/bs/le/m/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: uBlaze0.elf] Error 1
+16:50:53 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c:22:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:25:33: error: 'DeviceId' undeclared (first use in this function)
+  ConfigPtr = XBram_LookupConfig(DeviceId);
+                                 ^~~~~~~~
+../src/uBlaze0.c:25:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/uBlaze0.o] Error 1
+16:51:59 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c:22:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze0.elf  |tee "uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2430	    476	   3190	   6096	   17d0	uBlaze0.elf
+'Finished building: uBlaze0.elf.size'
+' '
+16:54:14 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:29:39: error: 'XPAR_MUTEX_0_IF_1_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_MUTEX_0_IF_0_DEVICE_ID'?
+     MTConfigPtr = XMutex_LookupConfig(XPAR_MUTEX_0_IF_1_DEVICE_ID);
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                       XPAR_MUTEX_0_IF_0_DEVICE_ID
+../src/uBlaze0.c:29:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/uBlaze0.c:49:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+make: *** [src/subdir.mk:23: src/uBlaze0.o] Error 1
+16:55:52 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:49:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze0.elf  |tee "uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3818	    492	   3122	   7432	   1d08	uBlaze0.elf
+'Finished building: uBlaze0.elf.size'
+' '
+16:56:20 **** Build of project uBlaze1_bsp ****
+make -k all 
+"Running Make include in microblaze_1/libsrc/bram_v4_2/src"
+make -C microblaze_1/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/cpu_v2_8/src"
+make -C microblaze_1/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/mutex_v4_3/src"
+make -C microblaze_1/libsrc/mutex_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/standalone_v6_8/src"
+make -C microblaze_1/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_1/libsrc/bram_v4_2/src"
+make -C microblaze_1/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_1/libsrc/cpu_v2_8/src"
+make -C microblaze_1/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_1/libsrc/mutex_v4_3/src"
+make -C microblaze_1/libsrc/mutex_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling mutex"
+"Running Make libs in microblaze_1/libsrc/standalone_v6_8/src"
+make -C microblaze_1/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+
+**** Build of configuration Debug for project uBlaze1 ****
+
+Nothing to build for project uBlaze1
+16:56:32 **** Auto Build of configuration Debug for project uBlaze1 ****
+make all 
+'Building file: ../src/uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze1.o" -I../../uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze1.d" -MT"src/uBlaze1.o" -o "src/uBlaze1.o" "../src/uBlaze1.c"
+'Finished building: ../src/uBlaze1.c'
+' '
+'Building target: uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze1.elf"  ./src/uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx_2018/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/bs/le/m/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: uBlaze1.elf] Error 1
+16:57:29 **** Auto Build of configuration Debug for project uBlaze1 ****
+make all 
+'Building file: ../src/uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze1.o" -I../../uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze1.d" -MT"src/uBlaze1.o" -o "src/uBlaze1.o" "../src/uBlaze1.c"
+../src/uBlaze1.c: In function 'main':
+../src/uBlaze1.c:27:5: error: unknown type name 'XGpio'
+     XGpio Gpio;
+     ^~~~~
+../src/uBlaze1.c:28:5: error: unknown type name 'XGpio_Config'; did you mean 'XBram_Config'?
+     XGpio_Config *GPIOConfigPtr;
+     ^~~~~~~~~~~~
+     XBram_Config
+../src/uBlaze1.c:36:39: error: 'XPAR_MUTEX_0_IF_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_MUTEX_0_IF_1_DEVICE_ID'?
+     MTConfigPtr = XMutex_LookupConfig(XPAR_MUTEX_0_IF_0_DEVICE_ID);
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                       XPAR_MUTEX_0_IF_1_DEVICE_ID
+../src/uBlaze1.c:36:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/uBlaze1.c:47:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+../src/uBlaze1.c:30:9: warning: variable 'cal' set but not used [-Wunused-but-set-variable]
+     int cal = 64;
+         ^~~
+../src/uBlaze1.c:28:19: warning: unused variable 'GPIOConfigPtr' [-Wunused-variable]
+     XGpio_Config *GPIOConfigPtr;
+                   ^~~~~~~~~~~~~
+../src/uBlaze1.c:27:11: warning: unused variable 'Gpio' [-Wunused-variable]
+     XGpio Gpio;
+           ^~~~
+make: *** [src/subdir.mk:23: src/uBlaze1.o] Error 1
+16:57:50 **** Auto Build of configuration Debug for project uBlaze1 ****
+make all 
+'Building file: ../src/uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze1.o" -I../../uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze1.d" -MT"src/uBlaze1.o" -o "src/uBlaze1.o" "../src/uBlaze1.c"
+../src/uBlaze1.c: In function 'main':
+../src/uBlaze1.c:36:39: error: 'XPAR_MUTEX_0_IF_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_MUTEX_0_IF_1_DEVICE_ID'?
+     MTConfigPtr = XMutex_LookupConfig(XPAR_MUTEX_0_IF_0_DEVICE_ID);
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                       XPAR_MUTEX_0_IF_1_DEVICE_ID
+../src/uBlaze1.c:36:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/uBlaze1.c:47:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+../src/uBlaze1.c:30:9: warning: variable 'cal' set but not used [-Wunused-but-set-variable]
+     int cal = 64;
+         ^~~
+make: *** [src/subdir.mk:23: src/uBlaze1.o] Error 1
+16:58:12 **** Auto Build of configuration Debug for project uBlaze1 ****
+make all 
+'Building file: ../src/uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze1.o" -I../../uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze1.d" -MT"src/uBlaze1.o" -o "src/uBlaze1.o" "../src/uBlaze1.c"
+../src/uBlaze1.c: In function 'main':
+../src/uBlaze1.c:47:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+../src/uBlaze1.c:30:9: warning: variable 'cal' set but not used [-Wunused-but-set-variable]
+     int cal = 64;
+         ^~~
+'Finished building: ../src/uBlaze1.c'
+' '
+'Building target: uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze1.elf"  ./src/uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze1.elf  |tee "uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3782	    492	   3118	   7392	   1ce0	uBlaze1.elf
+'Finished building: uBlaze1.elf.size'
+' '
+16:59:14 **** Incremental Build of configuration Debug for project uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:14 **** Incremental Build of configuration Debug for project uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:45 **** Incremental Build of configuration Debug for project uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:45 **** Incremental Build of configuration Debug for project uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:34 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:50:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+../src/uBlaze0.c: At top level:
+../src/uBlaze0.c:56:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/uBlaze0.c:57:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/uBlaze0.o] Error 1
+17:04:53 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:51:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze0.elf  |tee "uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3766	    492	   3118	   7376	   1cd0	uBlaze0.elf
+'Finished building: uBlaze0.elf.size'
+' '
+17:05:04 **** Incremental Build of configuration Debug for project uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:05:04 **** Incremental Build of configuration Debug for project uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:26 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:48:6: error: expected '}' before 'else'
+      else{
+      ^~~~
+../src/uBlaze0.c:52:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+make: *** [src/subdir.mk:23: src/uBlaze0.o] Error 1
+17:10:31 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:48:6: error: expected '}' before 'else'
+      else{
+      ^~~~
+../src/uBlaze0.c:52:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+make: *** [src/subdir.mk:23: src/uBlaze0.o] Error 1
+14:23:33 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:52:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1);
+      ^~~~~
+      strsep
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze0.elf  |tee "uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3818	    492	   3122	   7432	   1d08	uBlaze0.elf
+'Finished building: uBlaze0.elf.size'
+' '
+14:23:46 **** Incremental Build of configuration Debug for project uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+14:23:46 **** Incremental Build of configuration Debug for project uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
