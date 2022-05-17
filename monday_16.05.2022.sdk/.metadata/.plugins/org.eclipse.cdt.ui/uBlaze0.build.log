@@ -1,0 +1,26 @@
+15:33:38 **** Auto Build of configuration Debug for project uBlaze0 ****
+make all 
+'Building file: ../src/uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uBlaze0.o" -I../../uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uBlaze0.d" -MT"src/uBlaze0.o" -o "src/uBlaze0.o" "../src/uBlaze0.c"
+../src/uBlaze0.c: In function 'main':
+../src/uBlaze0.c:57:4: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+    strsep
+'Finished building: ../src/uBlaze0.c'
+' '
+'Building target: uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uBlaze0.elf"  ./src/uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size uBlaze0.elf  |tee "uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4026	    492	   3122	   7640	   1dd8	uBlaze0.elf
+'Finished building: uBlaze0.elf.size'
+' '
+
+15:33:39 Build Finished (took 789ms)
+
