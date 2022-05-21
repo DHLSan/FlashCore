@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 16 16:36:03 2022
+# Process ID: 11368
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_v10_1_synth_1
+# Command line: vivado.exe -log design_1_dlmb_v10_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_v10_1.tcl
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_v10_1_synth_1/design_1_dlmb_v10_1.vds
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_v10_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_dlmb_v10_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_dlmb_v10_1, cache-ID = 3fd8a3ac2ba06ed9.
+INFO: [Common 17-206] Exiting Vivado at Mon May 16 16:36:10 2022...
