@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 21 15:41:02 2022
+# Process ID: 10392
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 C:\Users\berke\Desktop\OKUL\SoC\SoC_Project_Final\tuesday_17_05_2022\tuesday_17_05_2022.xpr
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/vivado.log
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.xpr
+open_bd_design {C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
