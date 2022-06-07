@@ -127,3 +127,36 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
 dismissDialog("Launch SDK"); // aa (cp)
 // Tcl Message: launch_sdk -workspace C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk -hwspec C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk/design_1_wrapper.hdf 
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk -hwspec C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2804 ms. Increasing delay to 8412 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,271 MB. GUI used memory: 73 MB. Current time: 6/7/22, 5:20:33 PM EET
+// Elapsed time: 2563 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1408 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1481.789 ; gain = 0.000 
+// 'bA' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // B (f, cp)
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+selectButton((HResource) null, "System_SystemBuilderView.ToggleShowInterfacesOnlyAction"); // u (f, cp): TRUE
+// Elapsed time: 833 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cp)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "microblaze_0_local_memory/ilmb_bram_if_cntlr ; SLMB ; Mem ; 0x0000_0000 ; 16K ; 0x0000_3FFF", 10, "microblaze_0_local_memory/ilmb_bram_if_cntlr", 0, false); // g (Q, cp)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "microblaze_0_local_memory/dlmb_bram_if_cntlr ; SLMB ; Mem ; 0x0000_0000 ; 256K ; 0x0003_FFFF", 7, "microblaze_0_local_memory/dlmb_bram_if_cntlr", 0, false); // g (Q, cp)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_bram_ctrl_0 ; S_AXI ; Mem0 ; 0xC000_0000 ; 8K ; 0xC000_1FFF", 5, "axi_bram_ctrl_0", 0, false); // g (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,271 MB. GUI used memory: 73 MB. Current time: 6/7/22, 5:50:33 PM EET
