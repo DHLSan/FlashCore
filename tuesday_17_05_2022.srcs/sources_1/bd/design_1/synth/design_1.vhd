@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Tue May 17 15:43:53 2022
+--Date        : Tue May 24 16:50:46 2022
 --Host        : DESKTOP-K73VVKB running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -3485,22 +3485,24 @@ entity design_1_axi_interconnect_1_0 is
     M01_AXI_wvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     M02_ACLK : in STD_LOGIC;
     M02_ARESETN : in STD_LOGIC;
-    M02_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_araddr : out STD_LOGIC;
+    M02_AXI_arprot : out STD_LOGIC;
     M02_AXI_arready : in STD_LOGIC;
     M02_AXI_arvalid : out STD_LOGIC;
-    M02_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_awaddr : out STD_LOGIC;
+    M02_AXI_awprot : out STD_LOGIC;
     M02_AXI_awready : in STD_LOGIC;
     M02_AXI_awvalid : out STD_LOGIC;
     M02_AXI_bready : out STD_LOGIC;
-    M02_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M02_AXI_bresp : in STD_LOGIC;
     M02_AXI_bvalid : in STD_LOGIC;
-    M02_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_rdata : in STD_LOGIC;
     M02_AXI_rready : out STD_LOGIC;
-    M02_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M02_AXI_rresp : in STD_LOGIC;
     M02_AXI_rvalid : in STD_LOGIC;
-    M02_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M02_AXI_wdata : out STD_LOGIC;
     M02_AXI_wready : in STD_LOGIC;
-    M02_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M02_AXI_wstrb : out STD_LOGIC;
     M02_AXI_wvalid : out STD_LOGIC;
     S00_ACLK : in STD_LOGIC;
     S00_ARESETN : in STD_LOGIC;
@@ -3637,17 +3639,19 @@ architecture STRUCTURE of design_1_axi_interconnect_1_0 is
   signal m01_couplers_to_axi_interconnect_1_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal m01_couplers_to_axi_interconnect_1_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m02_couplers_to_axi_interconnect_1_ARADDR : STD_LOGIC;
+  signal m02_couplers_to_axi_interconnect_1_ARPROT : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_ARREADY : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_ARVALID : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_AWADDR : STD_LOGIC;
+  signal m02_couplers_to_axi_interconnect_1_AWPROT : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_AWREADY : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_AWVALID : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_BREADY : STD_LOGIC;
-  signal m02_couplers_to_axi_interconnect_1_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal m02_couplers_to_axi_interconnect_1_BRESP : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_BVALID : STD_LOGIC;
-  signal m02_couplers_to_axi_interconnect_1_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal m02_couplers_to_axi_interconnect_1_RDATA : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_RREADY : STD_LOGIC;
-  signal m02_couplers_to_axi_interconnect_1_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal m02_couplers_to_axi_interconnect_1_RRESP : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_RVALID : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_WDATA : STD_LOGIC;
   signal m02_couplers_to_axi_interconnect_1_WREADY : STD_LOGIC;
@@ -3727,8 +3731,6 @@ architecture STRUCTURE of design_1_axi_interconnect_1_0 is
   signal xbar_to_m02_couplers_WREADY : STD_LOGIC;
   signal xbar_to_m02_couplers_WSTRB : STD_LOGIC_VECTOR ( 11 downto 8 );
   signal xbar_to_m02_couplers_WVALID : STD_LOGIC_VECTOR ( 2 to 2 );
-  signal NLW_m02_couplers_M_AXI_arprot_UNCONNECTED : STD_LOGIC;
-  signal NLW_m02_couplers_M_AXI_awprot_UNCONNECTED : STD_LOGIC;
   signal NLW_xbar_m_axi_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 3 );
   signal NLW_xbar_m_axi_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 3 );
 begin
@@ -3758,110 +3760,16 @@ begin
   M01_AXI_wvalid(0) <= m01_couplers_to_axi_interconnect_1_WVALID(0);
   M02_ACLK_1 <= M02_ACLK;
   M02_ARESETN_1 <= M02_ARESETN;
-  M02_AXI_araddr(31) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(30) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(29) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(28) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(27) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(26) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(25) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(24) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(23) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(22) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(21) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(20) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(19) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(18) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(17) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(16) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(15) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(14) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(13) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(12) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(11) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(10) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(9) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(8) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(7) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(6) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(5) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(4) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(3) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(2) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(1) <= m02_couplers_to_axi_interconnect_1_ARADDR;
-  M02_AXI_araddr(0) <= m02_couplers_to_axi_interconnect_1_ARADDR;
+  M02_AXI_araddr <= m02_couplers_to_axi_interconnect_1_ARADDR;
+  M02_AXI_arprot <= m02_couplers_to_axi_interconnect_1_ARPROT;
   M02_AXI_arvalid <= m02_couplers_to_axi_interconnect_1_ARVALID;
-  M02_AXI_awaddr(31) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(30) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(29) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(28) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(27) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(26) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(25) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(24) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(23) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(22) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(21) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(20) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(19) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(18) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(17) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(16) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(15) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(14) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(13) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(12) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(11) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(10) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(9) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(8) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(7) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(6) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(5) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(4) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(3) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(2) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(1) <= m02_couplers_to_axi_interconnect_1_AWADDR;
-  M02_AXI_awaddr(0) <= m02_couplers_to_axi_interconnect_1_AWADDR;
+  M02_AXI_awaddr <= m02_couplers_to_axi_interconnect_1_AWADDR;
+  M02_AXI_awprot <= m02_couplers_to_axi_interconnect_1_AWPROT;
   M02_AXI_awvalid <= m02_couplers_to_axi_interconnect_1_AWVALID;
   M02_AXI_bready <= m02_couplers_to_axi_interconnect_1_BREADY;
   M02_AXI_rready <= m02_couplers_to_axi_interconnect_1_RREADY;
-  M02_AXI_wdata(31) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(30) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(29) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(28) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(27) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(26) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(25) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(24) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(23) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(22) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(21) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(20) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(19) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(18) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(17) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(16) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(15) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(14) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(13) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(12) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(11) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(10) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(9) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(8) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(7) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(6) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(5) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(4) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(3) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(2) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(1) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wdata(0) <= m02_couplers_to_axi_interconnect_1_WDATA;
-  M02_AXI_wstrb(3) <= m02_couplers_to_axi_interconnect_1_WSTRB;
-  M02_AXI_wstrb(2) <= m02_couplers_to_axi_interconnect_1_WSTRB;
-  M02_AXI_wstrb(1) <= m02_couplers_to_axi_interconnect_1_WSTRB;
-  M02_AXI_wstrb(0) <= m02_couplers_to_axi_interconnect_1_WSTRB;
+  M02_AXI_wdata <= m02_couplers_to_axi_interconnect_1_WDATA;
+  M02_AXI_wstrb <= m02_couplers_to_axi_interconnect_1_WSTRB;
   M02_AXI_wvalid <= m02_couplers_to_axi_interconnect_1_WVALID;
   S00_ACLK_1 <= S00_ACLK;
   S00_ARESETN_1 <= S00_ARESETN;
@@ -3904,10 +3812,10 @@ begin
   m01_couplers_to_axi_interconnect_1_WREADY(0) <= M01_AXI_wready(0);
   m02_couplers_to_axi_interconnect_1_ARREADY <= M02_AXI_arready;
   m02_couplers_to_axi_interconnect_1_AWREADY <= M02_AXI_awready;
-  m02_couplers_to_axi_interconnect_1_BRESP(1 downto 0) <= M02_AXI_bresp(1 downto 0);
+  m02_couplers_to_axi_interconnect_1_BRESP <= M02_AXI_bresp;
   m02_couplers_to_axi_interconnect_1_BVALID <= M02_AXI_bvalid;
-  m02_couplers_to_axi_interconnect_1_RDATA(31 downto 0) <= M02_AXI_rdata(31 downto 0);
-  m02_couplers_to_axi_interconnect_1_RRESP(1 downto 0) <= M02_AXI_rresp(1 downto 0);
+  m02_couplers_to_axi_interconnect_1_RDATA <= M02_AXI_rdata;
+  m02_couplers_to_axi_interconnect_1_RRESP <= M02_AXI_rresp;
   m02_couplers_to_axi_interconnect_1_RVALID <= M02_AXI_rvalid;
   m02_couplers_to_axi_interconnect_1_WREADY <= M02_AXI_wready;
 m00_couplers: entity work.m00_couplers_imp_1FDLJBY
@@ -4001,19 +3909,19 @@ m02_couplers: entity work.m02_couplers_imp_1GFU8IL
       M_ACLK => M02_ACLK_1,
       M_ARESETN => M02_ARESETN_1,
       M_AXI_araddr => m02_couplers_to_axi_interconnect_1_ARADDR,
-      M_AXI_arprot => NLW_m02_couplers_M_AXI_arprot_UNCONNECTED,
+      M_AXI_arprot => m02_couplers_to_axi_interconnect_1_ARPROT,
       M_AXI_arready => m02_couplers_to_axi_interconnect_1_ARREADY,
       M_AXI_arvalid => m02_couplers_to_axi_interconnect_1_ARVALID,
       M_AXI_awaddr => m02_couplers_to_axi_interconnect_1_AWADDR,
-      M_AXI_awprot => NLW_m02_couplers_M_AXI_awprot_UNCONNECTED,
+      M_AXI_awprot => m02_couplers_to_axi_interconnect_1_AWPROT,
       M_AXI_awready => m02_couplers_to_axi_interconnect_1_AWREADY,
       M_AXI_awvalid => m02_couplers_to_axi_interconnect_1_AWVALID,
       M_AXI_bready => m02_couplers_to_axi_interconnect_1_BREADY,
-      M_AXI_bresp => m02_couplers_to_axi_interconnect_1_BRESP(0),
+      M_AXI_bresp => m02_couplers_to_axi_interconnect_1_BRESP,
       M_AXI_bvalid => m02_couplers_to_axi_interconnect_1_BVALID,
-      M_AXI_rdata => m02_couplers_to_axi_interconnect_1_RDATA(0),
+      M_AXI_rdata => m02_couplers_to_axi_interconnect_1_RDATA,
       M_AXI_rready => m02_couplers_to_axi_interconnect_1_RREADY,
-      M_AXI_rresp => m02_couplers_to_axi_interconnect_1_RRESP(0),
+      M_AXI_rresp => m02_couplers_to_axi_interconnect_1_RRESP,
       M_AXI_rvalid => m02_couplers_to_axi_interconnect_1_RVALID,
       M_AXI_wdata => m02_couplers_to_axi_interconnect_1_WDATA,
       M_AXI_wready => m02_couplers_to_axi_interconnect_1_WREADY,
@@ -5695,15 +5603,17 @@ architecture STRUCTURE of design_1 is
   signal rst_ps7_0_100M_bus_struct_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_mb_reset : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_axi_interconnect_1_M02_AXI_araddr_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_1_M02_AXI_arprot_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_1_M02_AXI_arvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_1_M02_AXI_awaddr_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_1_M02_AXI_awprot_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_1_M02_AXI_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_1_M02_AXI_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_1_M02_AXI_rready_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_1_M02_AXI_wdata_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_1_M02_AXI_wstrb_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_1_M02_AXI_wvalid_UNCONNECTED : STD_LOGIC;
-  signal NLW_axi_interconnect_1_M02_AXI_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_axi_interconnect_1_M02_AXI_awaddr_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_axi_interconnect_1_M02_AXI_wdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_axi_interconnect_1_M02_AXI_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_blk_mem_gen_0_rsta_busy_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_Interrupt_Ack_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 1 );
   signal NLW_microblaze_1_Interrupt_Ack_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 1 );
@@ -5944,22 +5854,24 @@ axi_interconnect_1: entity work.design_1_axi_interconnect_1_0
       M01_AXI_wvalid(0) => axi_interconnect_1_M01_AXI_WVALID(0),
       M02_ACLK => microblaze_1_Clk,
       M02_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
-      M02_AXI_araddr(31 downto 0) => NLW_axi_interconnect_1_M02_AXI_araddr_UNCONNECTED(31 downto 0),
+      M02_AXI_araddr => NLW_axi_interconnect_1_M02_AXI_araddr_UNCONNECTED,
+      M02_AXI_arprot => NLW_axi_interconnect_1_M02_AXI_arprot_UNCONNECTED,
       M02_AXI_arready => '0',
       M02_AXI_arvalid => NLW_axi_interconnect_1_M02_AXI_arvalid_UNCONNECTED,
-      M02_AXI_awaddr(31 downto 0) => NLW_axi_interconnect_1_M02_AXI_awaddr_UNCONNECTED(31 downto 0),
+      M02_AXI_awaddr => NLW_axi_interconnect_1_M02_AXI_awaddr_UNCONNECTED,
+      M02_AXI_awprot => NLW_axi_interconnect_1_M02_AXI_awprot_UNCONNECTED,
       M02_AXI_awready => '0',
       M02_AXI_awvalid => NLW_axi_interconnect_1_M02_AXI_awvalid_UNCONNECTED,
       M02_AXI_bready => NLW_axi_interconnect_1_M02_AXI_bready_UNCONNECTED,
-      M02_AXI_bresp(1 downto 0) => B"00",
+      M02_AXI_bresp => '0',
       M02_AXI_bvalid => '0',
-      M02_AXI_rdata(31 downto 0) => B"00000000000000000000000000000000",
+      M02_AXI_rdata => '0',
       M02_AXI_rready => NLW_axi_interconnect_1_M02_AXI_rready_UNCONNECTED,
-      M02_AXI_rresp(1 downto 0) => B"00",
+      M02_AXI_rresp => '0',
       M02_AXI_rvalid => '0',
-      M02_AXI_wdata(31 downto 0) => NLW_axi_interconnect_1_M02_AXI_wdata_UNCONNECTED(31 downto 0),
+      M02_AXI_wdata => NLW_axi_interconnect_1_M02_AXI_wdata_UNCONNECTED,
       M02_AXI_wready => '0',
-      M02_AXI_wstrb(3 downto 0) => NLW_axi_interconnect_1_M02_AXI_wstrb_UNCONNECTED(3 downto 0),
+      M02_AXI_wstrb => NLW_axi_interconnect_1_M02_AXI_wstrb_UNCONNECTED,
       M02_AXI_wvalid => NLW_axi_interconnect_1_M02_AXI_wvalid_UNCONNECTED,
       S00_ACLK => microblaze_1_Clk,
       S00_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),

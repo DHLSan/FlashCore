@@ -2,13 +2,13 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 16 16:37:36 2022
-# Process ID: 12496
-# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_ilmb_v10_0_synth_1
+# Start of session at: Tue May 24 16:52:50 2022
+# Process ID: 16436
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_ilmb_v10_0_synth_1
 # Command line: vivado.exe -log design_1_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_0.tcl
-# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.vds
-# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_ilmb_v10_0_synth_1\vivado.jou
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.vds
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_ilmb_v10_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_ilmb_v10_0.tcl -notrace
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 3fd8a3ac2ba06ed9.
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 16:37:43 2022...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 58a62c833be851c9.
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 16:52:58 2022...

@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 16 16:35:44 2022
-# Process ID: 10984
-# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1
+# Start of session at: Tue May 24 16:51:22 2022
+# Process ID: 6952
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1
 # Command line: vivado.exe -log design_1_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_0.tcl
-# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.vds
-# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1\vivado.jou
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.vds
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_microblaze_0_0.tcl -notrace
 Command: synth_design -top design_1_microblaze_0_0 -part xc7z020clg484-1 -mode out_of_context
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6056 
+INFO: Helper process launched with PID 8204 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 384.035 ; gain = 101.219
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 384.086 ; gain = 101.703
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 100000000 - type: integer 
 	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
@@ -185,8 +185,8 @@ INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/berk
 	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd:162656' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:807]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (59#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd:162656' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:807]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (59#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
 WARNING: [Synth 8-3331] design MB_SRLC16E has unconnected port Config_Reset
 WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[7]
 WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[6]
@@ -289,7 +289,7 @@ WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[172
 WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[171]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 607.688 ; gain = 324.871
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 607.008 ; gain = 324.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -302,32 +302,30 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 607.688 ; gain = 324.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 607.008 ; gain = 324.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 607.688 ; gain = 324.871
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 607.008 ; gain = 324.625
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_microblaze_0_0_propImpl.xdc].
+Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_microblaze_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_microblaze_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 828.301 ; gain = 0.000
-Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 823.793 ; gain = 0.000
+Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 828.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 824.191 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 437 instances were transformed.
   FD => FDRE: 32 instances
@@ -340,24 +338,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MUXCY_L => MUXCY: 117 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 828.758 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 829.887 ; gain = 1.129
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.021 . Memory (MB): peak = 824.191 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.100 . Memory (MB): peak = 825.133 ; gain = 0.941
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 829.887 ; gain = 547.070
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 825.133 ; gain = 542.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 829.887 ; gain = 547.070
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 825.133 ; gain = 542.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 829.887 ; gain = 547.070
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 825.133 ; gain = 542.750
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "long_ALU_Op_I" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "byte_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -377,7 +375,7 @@ INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "which_pc" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 829.887 ; gain = 547.070
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 825.133 ; gain = 542.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -850,7 +848,7 @@ INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Us
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.ALU_long_ALU_Op_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.Reg_Test_Long_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 829.887 ; gain = 547.070
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 825.133 ; gain = 542.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -862,13 +860,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:31 . Memory (MB): peak = 878.621 ; gain = 595.805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 875.039 ; gain = 592.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:38 . Memory (MB): peak = 944.590 ; gain = 661.773
+Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 877.520 ; gain = 595.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -880,7 +878,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:46 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -904,7 +902,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -917,7 +915,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -929,25 +927,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -967,11 +965,11 @@ Report Cell Usage:
 |2     |DSP48E1_1 |     1|
 |3     |DSP48E1_2 |     1|
 |4     |LUT1      |     4|
-|5     |LUT2      |    65|
-|6     |LUT3      |    85|
-|7     |LUT4      |   256|
-|8     |LUT5      |   150|
-|9     |LUT6      |   306|
+|5     |LUT2      |    62|
+|6     |LUT3      |    94|
+|7     |LUT4      |   264|
+|8     |LUT5      |   138|
+|9     |LUT6      |   305|
 |10    |LUT6_2    |   145|
 |11    |MULT_AND  |     2|
 |12    |MUXCY_L   |   115|
@@ -993,10 +991,10 @@ Report Instance Areas:
 +------+---------------------------------------------------------------------------------------------------+----------------------------------------+------+
 |      |Instance                                                                                           |Module                                  |Cells |
 +------+---------------------------------------------------------------------------------------------------+----------------------------------------+------+
-|1     |top                                                                                                |                                        |  2717|
-|2     |  U0                                                                                               |MicroBlaze                              |  2717|
-|3     |    MicroBlaze_Core_I                                                                              |MicroBlaze_Core                         |  2357|
-|4     |      \Area.Core                                                                                   |MicroBlaze_Area                         |  2349|
+|1     |top                                                                                                |                                        |  2718|
+|2     |  U0                                                                                               |MicroBlaze                              |  2718|
+|3     |    MicroBlaze_Core_I                                                                              |MicroBlaze_Core                         |  2358|
+|4     |      \Area.Core                                                                                   |MicroBlaze_Area                         |  2350|
 |5     |        Byte_Doublet_Handle_I                                                                      |Byte_Doublet_Handle                     |    36|
 |6     |          \Not_Using_Long.BYTE_0_1_I                                                               |MB_LUT6_2__parameterized10              |     1|
 |7     |          \Not_Using_Long.BYTE_2_3_I                                                               |MB_LUT6_2__parameterized12              |     1|
@@ -1019,7 +1017,7 @@ Report Instance Areas:
 |24    |          \Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr_No_Long.READ_SEL_LEFT_I              |MB_LUT3__parameterized9                 |     1|
 |25    |          \Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr_No_Long.READ_SEL_RIGHT_I             |MB_LUT2__parameterized2                 |    17|
 |26    |          \Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr_No_Long.WRITE_MSB_SEL_I              |MB_LUT6_2__parameterized16              |     1|
-|27    |        Data_Flow_I                                                                                |Data_Flow                               |  1178|
+|27    |        Data_Flow_I                                                                                |Data_Flow                               |  1180|
 |28    |          ALU_I                                                                                    |ALU                                     |   101|
 |29    |            \No_Carry_Decoding.CarryIn_MUXCY                                                       |MB_MUXCY_920                            |     1|
 |30    |            \No_Carry_Decoding.alu_carry_select_LUT                                                |MB_LUT3__parameterized7                 |     1|
@@ -1129,25 +1127,25 @@ Report Instance Areas:
 |134   |              MSR_I                                                                                |MB_FDRSE_918                            |     3|
 |135   |            \MSR_Bits[30].Using_MSR_Reg_Bit.MSR_Reg_Bit_I                                          |MSR_Reg_Bit_916                         |     2|
 |136   |              MSR_I                                                                                |MB_FDRSE_917                            |     2|
-|137   |          Operand_Select_I                                                                         |Operand_Select                          |   256|
-|138   |            \OpSelect_Bits[0].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized12     |    11|
+|137   |          Operand_Select_I                                                                         |Operand_Select                          |   259|
+|138   |            \OpSelect_Bits[0].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized12     |    10|
 |139   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_911                           |     1|
-|140   |              Op1_DFF                                                                              |MB_FDRE_912                             |     8|
+|140   |              Op1_DFF                                                                              |MB_FDRE_912                             |     5|
 |141   |              Op1_Reg_DFF                                                                          |MB_FDRE_913                             |     1|
-|142   |              Op2_DFF                                                                              |MB_FDE_914                              |     1|
-|143   |            \OpSelect_Bits[10].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10     |     5|
+|142   |              Op2_DFF                                                                              |MB_FDE_914                              |     3|
+|143   |            \OpSelect_Bits[10].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10     |     6|
 |144   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_907                           |     1|
-|145   |              Op1_DFF                                                                              |MB_FDRE_908                             |     1|
+|145   |              Op1_DFF                                                                              |MB_FDRE_908                             |     2|
 |146   |              Op1_Reg_DFF                                                                          |MB_FDRE_909                             |     1|
 |147   |              Op2_DFF                                                                              |MB_FDE_910                              |     2|
-|148   |            \OpSelect_Bits[11].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_763 |     5|
+|148   |            \OpSelect_Bits[11].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_763 |     6|
 |149   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_903                           |     1|
-|150   |              Op1_DFF                                                                              |MB_FDRE_904                             |     1|
+|150   |              Op1_DFF                                                                              |MB_FDRE_904                             |     3|
 |151   |              Op1_Reg_DFF                                                                          |MB_FDRE_905                             |     1|
-|152   |              Op2_DFF                                                                              |MB_FDE_906                              |     2|
-|153   |            \OpSelect_Bits[12].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_764 |     4|
+|152   |              Op2_DFF                                                                              |MB_FDE_906                              |     1|
+|153   |            \OpSelect_Bits[12].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_764 |     5|
 |154   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_899                           |     1|
-|155   |              Op1_DFF                                                                              |MB_FDRE_900                             |     1|
+|155   |              Op1_DFF                                                                              |MB_FDRE_900                             |     2|
 |156   |              Op1_Reg_DFF                                                                          |MB_FDRE_901                             |     1|
 |157   |              Op2_DFF                                                                              |MB_FDE_902                              |     1|
 |158   |            \OpSelect_Bits[13].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_765 |     4|
@@ -1157,37 +1155,37 @@ Report Instance Areas:
 |162   |              Op2_DFF                                                                              |MB_FDE_898                              |     1|
 |163   |            \OpSelect_Bits[14].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_766 |     5|
 |164   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_891                           |     1|
-|165   |              Op1_DFF                                                                              |MB_FDRE_892                             |     2|
+|165   |              Op1_DFF                                                                              |MB_FDRE_892                             |     1|
 |166   |              Op1_Reg_DFF                                                                          |MB_FDRE_893                             |     1|
-|167   |              Op2_DFF                                                                              |MB_FDE_894                              |     1|
+|167   |              Op2_DFF                                                                              |MB_FDE_894                              |     2|
 |168   |            \OpSelect_Bits[15].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized10_767 |     4|
 |169   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_887                           |     1|
 |170   |              Op1_DFF                                                                              |MB_FDRE_888                             |     1|
 |171   |              Op1_Reg_DFF                                                                          |MB_FDRE_889                             |     1|
 |172   |              Op2_DFF                                                                              |MB_FDE_890                              |     1|
-|173   |            \OpSelect_Bits[16].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8      |     7|
+|173   |            \OpSelect_Bits[16].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8      |     6|
 |174   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_883                           |     1|
-|175   |              Op1_DFF                                                                              |MB_FDRE_884                             |     4|
+|175   |              Op1_DFF                                                                              |MB_FDRE_884                             |     3|
 |176   |              Op1_Reg_DFF                                                                          |MB_FDRE_885                             |     1|
 |177   |              Op2_DFF                                                                              |MB_FDE_886                              |     1|
 |178   |            \OpSelect_Bits[17].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_768  |     5|
 |179   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_879                           |     1|
-|180   |              Op1_DFF                                                                              |MB_FDRE_880                             |     1|
+|180   |              Op1_DFF                                                                              |MB_FDRE_880                             |     2|
 |181   |              Op1_Reg_DFF                                                                          |MB_FDRE_881                             |     1|
-|182   |              Op2_DFF                                                                              |MB_FDE_882                              |     2|
-|183   |            \OpSelect_Bits[18].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_769  |     4|
+|182   |              Op2_DFF                                                                              |MB_FDE_882                              |     1|
+|183   |            \OpSelect_Bits[18].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_769  |     6|
 |184   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_875                           |     1|
-|185   |              Op1_DFF                                                                              |MB_FDRE_876                             |     1|
+|185   |              Op1_DFF                                                                              |MB_FDRE_876                             |     3|
 |186   |              Op1_Reg_DFF                                                                          |MB_FDRE_877                             |     1|
 |187   |              Op2_DFF                                                                              |MB_FDE_878                              |     1|
-|188   |            \OpSelect_Bits[19].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_770  |     4|
+|188   |            \OpSelect_Bits[19].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_770  |     5|
 |189   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_871                           |     1|
-|190   |              Op1_DFF                                                                              |MB_FDRE_872                             |     1|
+|190   |              Op1_DFF                                                                              |MB_FDRE_872                             |     2|
 |191   |              Op1_Reg_DFF                                                                          |MB_FDRE_873                             |     1|
 |192   |              Op2_DFF                                                                              |MB_FDE_874                              |     1|
-|193   |            \OpSelect_Bits[1].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_771 |     4|
+|193   |            \OpSelect_Bits[1].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_771 |     5|
 |194   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_867                           |     1|
-|195   |              Op1_DFF                                                                              |MB_FDRE_868                             |     1|
+|195   |              Op1_DFF                                                                              |MB_FDRE_868                             |     2|
 |196   |              Op1_Reg_DFF                                                                          |MB_FDRE_869                             |     1|
 |197   |              Op2_DFF                                                                              |MB_FDE_870                              |     1|
 |198   |            \OpSelect_Bits[20].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_772  |     4|
@@ -1195,74 +1193,74 @@ Report Instance Areas:
 |200   |              Op1_DFF                                                                              |MB_FDRE_864                             |     1|
 |201   |              Op1_Reg_DFF                                                                          |MB_FDRE_865                             |     1|
 |202   |              Op2_DFF                                                                              |MB_FDE_866                              |     1|
-|203   |            \OpSelect_Bits[21].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_773  |    52|
+|203   |            \OpSelect_Bits[21].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_773  |    37|
 |204   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_859                           |     1|
-|205   |              Op1_DFF                                                                              |MB_FDRE_860                             |     2|
+|205   |              Op1_DFF                                                                              |MB_FDRE_860                             |     1|
 |206   |              Op1_Reg_DFF                                                                          |MB_FDRE_861                             |     1|
-|207   |              Op2_DFF                                                                              |MB_FDE_862                              |    48|
-|208   |            \OpSelect_Bits[22].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_774  |    11|
+|207   |              Op2_DFF                                                                              |MB_FDE_862                              |    34|
+|208   |            \OpSelect_Bits[22].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_774  |    13|
 |209   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_855                           |     1|
 |210   |              Op1_DFF                                                                              |MB_FDRE_856                             |     3|
 |211   |              Op1_Reg_DFF                                                                          |MB_FDRE_857                             |     1|
-|212   |              Op2_DFF                                                                              |MB_FDE_858                              |     6|
-|213   |            \OpSelect_Bits[23].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_775  |     5|
+|212   |              Op2_DFF                                                                              |MB_FDE_858                              |     8|
+|213   |            \OpSelect_Bits[23].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized8_775  |    12|
 |214   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_851                           |     1|
 |215   |              Op1_DFF                                                                              |MB_FDRE_852                             |     1|
 |216   |              Op1_Reg_DFF                                                                          |MB_FDRE_853                             |     1|
-|217   |              Op2_DFF                                                                              |MB_FDE_854                              |     2|
-|218   |            \OpSelect_Bits[24].Operand_Select_Bit_I                                                |Operand_Select_Bit                      |    14|
+|217   |              Op2_DFF                                                                              |MB_FDE_854                              |     9|
+|218   |            \OpSelect_Bits[24].Operand_Select_Bit_I                                                |Operand_Select_Bit                      |    12|
 |219   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_847                           |     1|
-|220   |              Op1_DFF                                                                              |MB_FDRE_848                             |     2|
+|220   |              Op1_DFF                                                                              |MB_FDRE_848                             |     4|
 |221   |              Op1_Reg_DFF                                                                          |MB_FDRE_849                             |     1|
-|222   |              Op2_DFF                                                                              |MB_FDE_850                              |    10|
-|223   |            \OpSelect_Bits[25].Operand_Select_Bit_I                                                |Operand_Select_Bit_776                  |     8|
+|222   |              Op2_DFF                                                                              |MB_FDE_850                              |     6|
+|223   |            \OpSelect_Bits[25].Operand_Select_Bit_I                                                |Operand_Select_Bit_776                  |     6|
 |224   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_843                           |     1|
-|225   |              Op1_DFF                                                                              |MB_FDRE_844                             |     5|
+|225   |              Op1_DFF                                                                              |MB_FDRE_844                             |     3|
 |226   |              Op1_Reg_DFF                                                                          |MB_FDRE_845                             |     1|
 |227   |              Op2_DFF                                                                              |MB_FDE_846                              |     1|
-|228   |            \OpSelect_Bits[26].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized6      |     6|
+|228   |            \OpSelect_Bits[26].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized6      |     4|
 |229   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_839                           |     1|
-|230   |              Op1_DFF                                                                              |MB_FDRE_840                             |     3|
+|230   |              Op1_DFF                                                                              |MB_FDRE_840                             |     1|
 |231   |              Op1_Reg_DFF                                                                          |MB_FDRE_841                             |     1|
 |232   |              Op2_DFF                                                                              |MB_FDE_842                              |     1|
-|233   |            \OpSelect_Bits[27].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized4      |     8|
+|233   |            \OpSelect_Bits[27].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized4      |    19|
 |234   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_835                           |     1|
-|235   |              Op1_DFF                                                                              |MB_FDRE_836                             |     3|
+|235   |              Op1_DFF                                                                              |MB_FDRE_836                             |     1|
 |236   |              Op1_Reg_DFF                                                                          |MB_FDRE_837                             |     1|
-|237   |              Op2_DFF                                                                              |MB_FDE_838                              |     3|
+|237   |              Op2_DFF                                                                              |MB_FDE_838                              |    16|
 |238   |            \OpSelect_Bits[28].Operand_Select_Bit_I                                                |Operand_Select_Bit__parameterized2      |    10|
 |239   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_831                           |     1|
 |240   |              Op1_DFF                                                                              |MB_FDRE_832                             |     2|
 |241   |              Op1_Reg_DFF                                                                          |MB_FDRE_833                             |     1|
 |242   |              Op2_DFF                                                                              |MB_FDE_834                              |     6|
-|243   |            \OpSelect_Bits[29].Operand_Select_Bit_I                                                |Operand_Select_Bit_777                  |     6|
+|243   |            \OpSelect_Bits[29].Operand_Select_Bit_I                                                |Operand_Select_Bit_777                  |     7|
 |244   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_827                           |     1|
 |245   |              Op1_DFF                                                                              |MB_FDRE_828                             |     1|
 |246   |              Op1_Reg_DFF                                                                          |MB_FDRE_829                             |     1|
-|247   |              Op2_DFF                                                                              |MB_FDE_830                              |     3|
+|247   |              Op2_DFF                                                                              |MB_FDE_830                              |     4|
 |248   |            \OpSelect_Bits[2].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_778 |     5|
 |249   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_823                           |     1|
-|250   |              Op1_DFF                                                                              |MB_FDRE_824                             |     1|
+|250   |              Op1_DFF                                                                              |MB_FDRE_824                             |     2|
 |251   |              Op1_Reg_DFF                                                                          |MB_FDRE_825                             |     1|
-|252   |              Op2_DFF                                                                              |MB_FDE_826                              |     2|
-|253   |            \OpSelect_Bits[30].Operand_Select_Bit_I                                                |Operand_Select_Bit_779                  |     7|
+|252   |              Op2_DFF                                                                              |MB_FDE_826                              |     1|
+|253   |            \OpSelect_Bits[30].Operand_Select_Bit_I                                                |Operand_Select_Bit_779                  |     8|
 |254   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_819                           |     1|
 |255   |              Op1_DFF                                                                              |MB_FDRE_820                             |     2|
 |256   |              Op1_Reg_DFF                                                                          |MB_FDRE_821                             |     2|
-|257   |              Op2_DFF                                                                              |MB_FDE_822                              |     2|
-|258   |            \OpSelect_Bits[31].Operand_Select_Bit_I                                                |Operand_Select_Bit_780                  |     8|
+|257   |              Op2_DFF                                                                              |MB_FDE_822                              |     3|
+|258   |            \OpSelect_Bits[31].Operand_Select_Bit_I                                                |Operand_Select_Bit_780                  |     6|
 |259   |              \Both_PC_and_MSR.Op1_LUT6                                                            |MB_LUT6_2_815                           |     1|
 |260   |              Op1_DFF                                                                              |MB_FDRE_816                             |     1|
 |261   |              Op1_Reg_DFF                                                                          |MB_FDRE_817                             |     1|
-|262   |              Op2_DFF                                                                              |MB_FDE_818                              |     5|
-|263   |            \OpSelect_Bits[3].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_781 |     6|
+|262   |              Op2_DFF                                                                              |MB_FDE_818                              |     3|
+|263   |            \OpSelect_Bits[3].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_781 |     5|
 |264   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_811                           |     1|
-|265   |              Op1_DFF                                                                              |MB_FDRE_812                             |     3|
+|265   |              Op1_DFF                                                                              |MB_FDRE_812                             |     2|
 |266   |              Op1_Reg_DFF                                                                          |MB_FDRE_813                             |     1|
 |267   |              Op2_DFF                                                                              |MB_FDE_814                              |     1|
-|268   |            \OpSelect_Bits[4].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_782 |     4|
+|268   |            \OpSelect_Bits[4].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_782 |     5|
 |269   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_807                           |     1|
-|270   |              Op1_DFF                                                                              |MB_FDRE_808                             |     1|
+|270   |              Op1_DFF                                                                              |MB_FDRE_808                             |     2|
 |271   |              Op1_Reg_DFF                                                                          |MB_FDRE_809                             |     1|
 |272   |              Op2_DFF                                                                              |MB_FDE_810                              |     1|
 |273   |            \OpSelect_Bits[5].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_783 |     4|
@@ -1272,9 +1270,9 @@ Report Instance Areas:
 |277   |              Op2_DFF                                                                              |MB_FDE_806                              |     1|
 |278   |            \OpSelect_Bits[6].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_784 |     5|
 |279   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_799                           |     1|
-|280   |              Op1_DFF                                                                              |MB_FDRE_800                             |     2|
+|280   |              Op1_DFF                                                                              |MB_FDRE_800                             |     1|
 |281   |              Op1_Reg_DFF                                                                          |MB_FDRE_801                             |     1|
-|282   |              Op2_DFF                                                                              |MB_FDE_802                              |     1|
+|282   |              Op2_DFF                                                                              |MB_FDE_802                              |     2|
 |283   |            \OpSelect_Bits[7].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_785 |     4|
 |284   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2_795                           |     1|
 |285   |              Op1_DFF                                                                              |MB_FDRE_796                             |     1|
@@ -1285,9 +1283,9 @@ Report Instance Areas:
 |290   |              Op1_DFF                                                                              |MB_FDRE_792                             |     1|
 |291   |              Op1_Reg_DFF                                                                          |MB_FDRE_793                             |     1|
 |292   |              Op2_DFF                                                                              |MB_FDE_794                              |     1|
-|293   |            \OpSelect_Bits[9].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_787 |     7|
+|293   |            \OpSelect_Bits[9].Operand_Select_Bit_I                                                 |Operand_Select_Bit__parameterized10_787 |     6|
 |294   |              \Only_PC.Op1_LUT6                                                                    |MB_LUT6_2                               |     1|
-|295   |              Op1_DFF                                                                              |MB_FDRE_788                             |     4|
+|295   |              Op1_DFF                                                                              |MB_FDRE_788                             |     3|
 |296   |              Op1_Reg_DFF                                                                          |MB_FDRE_789                             |     1|
 |297   |              Op2_DFF                                                                              |MB_FDE_790                              |     1|
 |298   |          PC_Module_I                                                                              |PC_Module                               |   228|
@@ -1741,7 +1739,7 @@ Report Instance Areas:
 |746   |              Data_Shift_Mux                                                                       |MB_LUT6__parameterized1                 |     1|
 |747   |              EX_Result_DFF                                                                        |MB_FD                                   |     1|
 |748   |              Mul_ALU_Mux                                                                          |MB_LUT4__parameterized29                |     1|
-|749   |          Shift_Logic_Module_I                                                                     |Shift_Logic_Module                      |   134|
+|749   |          Shift_Logic_Module_I                                                                     |Shift_Logic_Module                      |   133|
 |750   |            \Shift_Logic_Bits[0].Shift_Logic_Bit_I                                                 |Shift_Logic_Bit                         |     3|
 |751   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_323            |     1|
 |752   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_324            |     1|
@@ -1814,18 +1812,18 @@ Report Instance Areas:
 |819   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_272            |     1|
 |820   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_273            |     1|
 |821   |              Shift_Logic_Mux                                                                      |MB_MUXF7_274                            |     1|
-|822   |            \Shift_Logic_Bits[26].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_193                     |     3|
+|822   |            \Shift_Logic_Bits[26].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_193                     |     4|
 |823   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_269            |     1|
 |824   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_270            |     1|
-|825   |              Shift_Logic_Mux                                                                      |MB_MUXF7_271                            |     1|
-|826   |            \Shift_Logic_Bits[27].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_194                     |     3|
+|825   |              Shift_Logic_Mux                                                                      |MB_MUXF7_271                            |     2|
+|826   |            \Shift_Logic_Bits[27].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_194                     |     4|
 |827   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_266            |     1|
 |828   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_267            |     1|
-|829   |              Shift_Logic_Mux                                                                      |MB_MUXF7_268                            |     1|
-|830   |            \Shift_Logic_Bits[28].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_195                     |     3|
+|829   |              Shift_Logic_Mux                                                                      |MB_MUXF7_268                            |     2|
+|830   |            \Shift_Logic_Bits[28].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_195                     |     4|
 |831   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_263            |     1|
 |832   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_264            |     1|
-|833   |              Shift_Logic_Mux                                                                      |MB_MUXF7_265                            |     1|
+|833   |              Shift_Logic_Mux                                                                      |MB_MUXF7_265                            |     2|
 |834   |            \Shift_Logic_Bits[29].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_196                     |     3|
 |835   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_260            |     1|
 |836   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_261            |     1|
@@ -1838,10 +1836,10 @@ Report Instance Areas:
 |843   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_254            |     1|
 |844   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_255            |     1|
 |845   |              Shift_Logic_Mux                                                                      |MB_MUXF7_256                            |     1|
-|846   |            \Shift_Logic_Bits[31].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_199                     |     3|
+|846   |            \Shift_Logic_Bits[31].Shift_Logic_Bit_I                                                |Shift_Logic_Bit_199                     |     4|
 |847   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_251            |     1|
 |848   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_252            |     1|
-|849   |              Shift_Logic_Mux                                                                      |MB_MUXF7_253                            |     1|
+|849   |              Shift_Logic_Mux                                                                      |MB_MUXF7_253                            |     2|
 |850   |            \Shift_Logic_Bits[3].Shift_Logic_Bit_I                                                 |Shift_Logic_Bit_200                     |     3|
 |851   |              Logic_LUT                                                                            |MB_LUT4__parameterized15_248            |     1|
 |852   |              Shift_LUT                                                                            |MB_LUT4__parameterized17_249            |     1|
@@ -1877,16 +1875,16 @@ Report Instance Areas:
 |882   |            \Use_PCMP_instr.No_PCMP_Long.pcmp_10_lut                                               |MB_LUT4__parameterized7_207             |     1|
 |883   |            \Use_PCMP_instr.No_PCMP_Long.pcmp_11_lut                                               |MB_LUT4__parameterized25                |     1|
 |884   |            \Use_PCMP_instr.No_PCMP_Long.shift_logic_result_i_lut_2                                |MB_LUT4__parameterized27                |     1|
-|885   |            \Use_PCMP_instr.carry_equal_byte_gen[0].carry_equal_byte                               |carry_equal                             |     9|
+|885   |            \Use_PCMP_instr.carry_equal_byte_gen[0].carry_equal_byte                               |carry_equal                             |     8|
 |886   |              \Using_FPGA.MUXCY_L_Enable                                                           |MB_MUXCY_227                            |     1|
 |887   |              \Using_FPGA.MUXCY_L_Enable_2                                                         |MB_MUXCY_228                            |     1|
-|888   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_229                            |     5|
+|888   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_229                            |     4|
 |889   |              \Using_FPGA.The_Compare[1].MUXCY_L_I1                                                |MB_MUXCY_230                            |     1|
 |890   |              \Using_FPGA.The_Compare[2].MUXCY_L_I1                                                |MB_MUXCY_231                            |     1|
-|891   |            \Use_PCMP_instr.carry_equal_byte_gen[1].carry_equal_byte                               |carry_equal_208                         |     8|
+|891   |            \Use_PCMP_instr.carry_equal_byte_gen[1].carry_equal_byte                               |carry_equal_208                         |     6|
 |892   |              \Using_FPGA.MUXCY_L_Enable                                                           |MB_MUXCY_222                            |     1|
 |893   |              \Using_FPGA.MUXCY_L_Enable_2                                                         |MB_MUXCY_223                            |     1|
-|894   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_224                            |     4|
+|894   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_224                            |     2|
 |895   |              \Using_FPGA.The_Compare[1].MUXCY_L_I1                                                |MB_MUXCY_225                            |     1|
 |896   |              \Using_FPGA.The_Compare[2].MUXCY_L_I1                                                |MB_MUXCY_226                            |     1|
 |897   |            \Use_PCMP_instr.carry_equal_byte_gen[2].carry_equal_byte                               |carry_equal_209                         |     5|
@@ -1895,61 +1893,61 @@ Report Instance Areas:
 |900   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_219                            |     1|
 |901   |              \Using_FPGA.The_Compare[1].MUXCY_L_I1                                                |MB_MUXCY_220                            |     1|
 |902   |              \Using_FPGA.The_Compare[2].MUXCY_L_I1                                                |MB_MUXCY_221                            |     1|
-|903   |            \Use_PCMP_instr.carry_equal_byte_gen[3].carry_equal_byte                               |carry_equal_210                         |     7|
+|903   |            \Use_PCMP_instr.carry_equal_byte_gen[3].carry_equal_byte                               |carry_equal_210                         |     5|
 |904   |              \Using_FPGA.MUXCY_L_Enable                                                           |MB_MUXCY_212                            |     1|
 |905   |              \Using_FPGA.MUXCY_L_Enable_2                                                         |MB_MUXCY_213                            |     1|
-|906   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_214                            |     3|
+|906   |              \Using_FPGA.The_Compare[0].MUXCY_L_I1                                                |MB_MUXCY_214                            |     1|
 |907   |              \Using_FPGA.The_Compare[1].MUXCY_L_I1                                                |MB_MUXCY_215                            |     1|
 |908   |              \Using_FPGA.The_Compare[2].MUXCY_L_I1                                                |MB_MUXCY_216                            |     1|
 |909   |            \Use_PCMP_instr.shift_logic_result_i_lut_0                                             |MB_LUT2                                 |     1|
 |910   |            \Use_PCMP_instr.shift_logic_result_i_lut_1                                             |MB_LUT2_211                             |     1|
 |911   |          \Using_Barrel_Shifter.barrel_shift_I                                                     |barrel_shift                            |   257|
-|912   |            \BS_Rev_Loop[0].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_128           |     1|
+|912   |            \BS_Rev_Loop[0].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_128           |     2|
 |913   |            \BS_Rev_Loop[0].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_129           |     1|
 |914   |            \BS_Rev_Loop[0].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_130           |     1|
-|915   |            \BS_Rev_Loop[10].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_131           |     4|
+|915   |            \BS_Rev_Loop[10].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_131           |     5|
 |916   |            \BS_Rev_Loop[10].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_132           |     1|
 |917   |            \BS_Rev_Loop[10].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_133           |     1|
-|918   |            \BS_Rev_Loop[11].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_134           |     3|
+|918   |            \BS_Rev_Loop[11].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_134           |     7|
 |919   |            \BS_Rev_Loop[11].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_135           |     1|
 |920   |            \BS_Rev_Loop[11].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_136           |     1|
-|921   |            \BS_Rev_Loop[12].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_137           |     7|
+|921   |            \BS_Rev_Loop[12].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_137           |     4|
 |922   |            \BS_Rev_Loop[12].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_138           |     1|
 |923   |            \BS_Rev_Loop[12].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_139           |     1|
-|924   |            \BS_Rev_Loop[13].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_140           |    11|
+|924   |            \BS_Rev_Loop[13].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_140           |     2|
 |925   |            \BS_Rev_Loop[13].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_141           |     1|
 |926   |            \BS_Rev_Loop[13].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_142           |     1|
-|927   |            \BS_Rev_Loop[14].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_143           |     5|
+|927   |            \BS_Rev_Loop[14].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_143           |    12|
 |928   |            \BS_Rev_Loop[14].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_144           |     1|
 |929   |            \BS_Rev_Loop[14].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_145           |     1|
-|930   |            \BS_Rev_Loop[15].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_146           |     6|
+|930   |            \BS_Rev_Loop[15].I_BS_REV_A_LUT6                                                       |MB_LUT6_2__parameterized4_146           |     1|
 |931   |            \BS_Rev_Loop[15].I_BS_REV_LUT6                                                         |MB_LUT6_2__parameterized4_147           |     1|
 |932   |            \BS_Rev_Loop[15].I_BS_SHIFT16_LUT6                                                     |MB_LUT6_2__parameterized4_148           |     1|
-|933   |            \BS_Rev_Loop[1].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_149           |     2|
+|933   |            \BS_Rev_Loop[1].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_149           |     5|
 |934   |            \BS_Rev_Loop[1].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_150           |     1|
 |935   |            \BS_Rev_Loop[1].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_151           |     1|
-|936   |            \BS_Rev_Loop[2].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_152           |     5|
+|936   |            \BS_Rev_Loop[2].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_152           |     3|
 |937   |            \BS_Rev_Loop[2].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_153           |     1|
 |938   |            \BS_Rev_Loop[2].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_154           |     1|
-|939   |            \BS_Rev_Loop[3].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_155           |     5|
+|939   |            \BS_Rev_Loop[3].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_155           |     6|
 |940   |            \BS_Rev_Loop[3].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_156           |     1|
 |941   |            \BS_Rev_Loop[3].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_157           |     1|
-|942   |            \BS_Rev_Loop[4].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_158           |     3|
+|942   |            \BS_Rev_Loop[4].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_158           |     6|
 |943   |            \BS_Rev_Loop[4].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_159           |     1|
 |944   |            \BS_Rev_Loop[4].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_160           |     1|
-|945   |            \BS_Rev_Loop[5].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_161           |    10|
+|945   |            \BS_Rev_Loop[5].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_161           |     8|
 |946   |            \BS_Rev_Loop[5].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_162           |     1|
 |947   |            \BS_Rev_Loop[5].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_163           |     1|
 |948   |            \BS_Rev_Loop[6].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_164           |     2|
 |949   |            \BS_Rev_Loop[6].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_165           |     1|
 |950   |            \BS_Rev_Loop[6].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_166           |     1|
-|951   |            \BS_Rev_Loop[7].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_167           |     4|
+|951   |            \BS_Rev_Loop[7].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_167           |     3|
 |952   |            \BS_Rev_Loop[7].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_168           |     1|
 |953   |            \BS_Rev_Loop[7].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_169           |     1|
-|954   |            \BS_Rev_Loop[8].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_170           |     2|
+|954   |            \BS_Rev_Loop[8].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_170           |     6|
 |955   |            \BS_Rev_Loop[8].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_171           |     1|
 |956   |            \BS_Rev_Loop[8].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_172           |     1|
-|957   |            \BS_Rev_Loop[9].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_173           |     3|
+|957   |            \BS_Rev_Loop[9].I_BS_REV_A_LUT6                                                        |MB_LUT6_2__parameterized4_173           |     1|
 |958   |            \BS_Rev_Loop[9].I_BS_REV_LUT6                                                          |MB_LUT6_2__parameterized4_174           |     1|
 |959   |            \BS_Rev_Loop[9].I_BS_SHIFT16_LUT6                                                      |MB_LUT6_2__parameterized4_175           |     1|
 |960   |          Zero_Detect_I                                                                            |Zero_Detect                             |    12|
@@ -1967,47 +1965,47 @@ Report Instance Areas:
 |972   |              \Using_DSP48E1.DSP48E1_I1                                                            |MB_DSP48E1__parameterized3              |     1|
 |973   |            \Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1                                    |dsp_module                              |     1|
 |974   |              \Using_DSP48E1.DSP48E1_I1                                                            |MB_DSP48E1                              |     1|
-|975   |        Decode_I                                                                                   |Decode                                  |   404|
-|976   |          PreFetch_Buffer_I                                                                        |PreFetch_Buffer                         |   170|
-|977   |            \Buffer_DFFs[1].FDS_I                                                                  |MB_FDS                                  |     4|
+|975   |        Decode_I                                                                                   |Decode                                  |   401|
+|976   |          PreFetch_Buffer_I                                                                        |PreFetch_Buffer                         |   167|
+|977   |            \Buffer_DFFs[1].FDS_I                                                                  |MB_FDS                                  |     2|
 |978   |            \Buffer_DFFs[1].MUXCY_XOR_I                                                            |MB_MUXCY_XORCY                          |     1|
-|979   |            \Buffer_DFFs[2].FDS_I                                                                  |MB_FDS_86                               |     1|
+|979   |            \Buffer_DFFs[2].FDS_I                                                                  |MB_FDS_86                               |     2|
 |980   |            \Buffer_DFFs[2].MUXCY_XOR_I                                                            |MB_MUXCY_XORCY_87                       |     2|
 |981   |            \Buffer_DFFs[3].FDS_I                                                                  |MB_FDS_88                               |     1|
 |982   |            \Buffer_DFFs[3].MUXCY_XOR_I                                                            |MB_MUXCY_XORCY_89                       |     2|
-|983   |            \PreFetch_Buffers[0].SRL16E_I                                                          |MB_SRL16E                               |    45|
+|983   |            \PreFetch_Buffers[0].SRL16E_I                                                          |MB_SRL16E                               |    43|
 |984   |            \PreFetch_Buffers[10].SRL16E_I                                                         |MB_SRL16E_90                            |     1|
 |985   |            \PreFetch_Buffers[11].SRL16E_I                                                         |MB_SRL16E_91                            |     2|
 |986   |            \PreFetch_Buffers[12].SRL16E_I                                                         |MB_SRL16E_92                            |     1|
-|987   |            \PreFetch_Buffers[13].SRL16E_I                                                         |MB_SRL16E_93                            |     5|
-|988   |            \PreFetch_Buffers[14].SRL16E_I                                                         |MB_SRL16E_94                            |     3|
+|987   |            \PreFetch_Buffers[13].SRL16E_I                                                         |MB_SRL16E_93                            |     4|
+|988   |            \PreFetch_Buffers[14].SRL16E_I                                                         |MB_SRL16E_94                            |     4|
 |989   |            \PreFetch_Buffers[15].SRL16E_I                                                         |MB_SRL16E_95                            |     2|
 |990   |            \PreFetch_Buffers[16].SRL16E_I                                                         |MB_SRL16E_96                            |    18|
-|991   |            \PreFetch_Buffers[17].SRL16E_I                                                         |MB_SRL16E_97                            |     1|
-|992   |            \PreFetch_Buffers[18].SRL16E_I                                                         |MB_SRL16E_98                            |     2|
+|991   |            \PreFetch_Buffers[17].SRL16E_I                                                         |MB_SRL16E_97                            |     2|
+|992   |            \PreFetch_Buffers[18].SRL16E_I                                                         |MB_SRL16E_98                            |     1|
 |993   |            \PreFetch_Buffers[19].SRL16E_I                                                         |MB_SRL16E_99                            |     1|
-|994   |            \PreFetch_Buffers[1].SRL16E_I                                                          |MB_SRL16E_100                           |     6|
-|995   |            \PreFetch_Buffers[20].SRL16E_I                                                         |MB_SRL16E_101                           |     1|
+|994   |            \PreFetch_Buffers[1].SRL16E_I                                                          |MB_SRL16E_100                           |     9|
+|995   |            \PreFetch_Buffers[20].SRL16E_I                                                         |MB_SRL16E_101                           |     4|
 |996   |            \PreFetch_Buffers[21].SRL16E_I                                                         |MB_SRL16E_102                           |     1|
 |997   |            \PreFetch_Buffers[22].SRL16E_I                                                         |MB_SRL16E_103                           |     1|
 |998   |            \PreFetch_Buffers[23].SRL16E_I                                                         |MB_SRL16E_104                           |     1|
 |999   |            \PreFetch_Buffers[24].SRL16E_I                                                         |MB_SRL16E_105                           |     1|
-|1000  |            \PreFetch_Buffers[25].SRL16E_I                                                         |MB_SRL16E_106                           |     1|
-|1001  |            \PreFetch_Buffers[26].SRL16E_I                                                         |MB_SRL16E_107                           |     3|
+|1000  |            \PreFetch_Buffers[25].SRL16E_I                                                         |MB_SRL16E_106                           |     3|
+|1001  |            \PreFetch_Buffers[26].SRL16E_I                                                         |MB_SRL16E_107                           |     1|
 |1002  |            \PreFetch_Buffers[27].SRL16E_I                                                         |MB_SRL16E_108                           |     1|
-|1003  |            \PreFetch_Buffers[28].SRL16E_I                                                         |MB_SRL16E_109                           |     2|
+|1003  |            \PreFetch_Buffers[28].SRL16E_I                                                         |MB_SRL16E_109                           |     3|
 |1004  |            \PreFetch_Buffers[29].SRL16E_I                                                         |MB_SRL16E_110                           |     1|
-|1005  |            \PreFetch_Buffers[2].SRL16E_I                                                          |MB_SRL16E_111                           |     6|
+|1005  |            \PreFetch_Buffers[2].SRL16E_I                                                          |MB_SRL16E_111                           |     8|
 |1006  |            \PreFetch_Buffers[30].SRL16E_I                                                         |MB_SRL16E_112                           |     1|
-|1007  |            \PreFetch_Buffers[31].SRL16E_I                                                         |MB_SRL16E_113                           |     3|
-|1008  |            \PreFetch_Buffers[3].SRL16E_I                                                          |MB_SRL16E_114                           |    11|
-|1009  |            \PreFetch_Buffers[4].SRL16E_I                                                          |MB_SRL16E_115                           |    15|
-|1010  |            \PreFetch_Buffers[5].SRL16E_I                                                          |MB_SRL16E_116                           |    10|
-|1011  |            \PreFetch_Buffers[6].SRL16E_I                                                          |MB_SRL16E_117                           |     1|
-|1012  |            \PreFetch_Buffers[7].SRL16E_I                                                          |MB_SRL16E_118                           |     2|
+|1007  |            \PreFetch_Buffers[31].SRL16E_I                                                         |MB_SRL16E_113                           |     2|
+|1008  |            \PreFetch_Buffers[3].SRL16E_I                                                          |MB_SRL16E_114                           |    12|
+|1009  |            \PreFetch_Buffers[4].SRL16E_I                                                          |MB_SRL16E_115                           |     6|
+|1010  |            \PreFetch_Buffers[5].SRL16E_I                                                          |MB_SRL16E_116                           |     7|
+|1011  |            \PreFetch_Buffers[6].SRL16E_I                                                          |MB_SRL16E_117                           |     3|
+|1012  |            \PreFetch_Buffers[7].SRL16E_I                                                          |MB_SRL16E_118                           |     1|
 |1013  |            \PreFetch_Buffers[8].SRL16E_I                                                          |MB_SRL16E_119                           |     1|
 |1014  |            \PreFetch_Buffers[9].SRL16E_I                                                          |MB_SRL16E_120                           |     3|
-|1015  |            of_valid_FDR_I                                                                         |MB_FDR                                  |     5|
+|1015  |            of_valid_FDR_I                                                                         |MB_FDR                                  |     7|
 |1016  |          \Using_FPGA.ALU_Carry_FDRE                                                               |MB_FDRE                                 |     1|
 |1017  |          \Using_FPGA.ALU_Carry_MUXCY                                                              |MB_MUXCY_58                             |     1|
 |1018  |          \Using_FPGA.ALU_OP0_FDRE                                                                 |MB_FDRE_59                              |     1|
@@ -2051,17 +2049,17 @@ Report Instance Areas:
 |1056  |          \Using_FPGA.of_PipeRun_MuxCY_1                                                           |MB_MUXCY_85                             |    13|
 |1057  |          \Using_FPGA.of_PipeRun_Select_LUT5                                                       |MB_LUT5                                 |     1|
 |1058  |          \Using_FPGA.of_PipeRun_without_dready_LUT5                                               |MB_LUT5__parameterized1                 |     2|
-|1059  |          write_Reg_I_LUT                                                                          |MB_LUT4                                 |     3|
-|1060  |        \Implement_Debug_Logic.Master_Core.Debug_Area                                              |Debug                                   |   429|
+|1059  |          write_Reg_I_LUT                                                                          |MB_LUT4                                 |     2|
+|1060  |        \Implement_Debug_Logic.Master_Core.Debug_Area                                              |Debug                                   |   428|
 |1061  |          \Area_Debug_Control.Dbg_Inhibit_EX_FDRSE                                                 |MB_FDRSE                                |     6|
 |1062  |          \Area_Debug_Control.Stop_CPU_FDRSE                                                       |MB_FDRSE_17                             |     4|
-|1063  |          \Area_Debug_Control.Stop_Instr_Fetch_FDRSE                                               |MB_FDRSE_18                             |    40|
+|1063  |          \Area_Debug_Control.Stop_Instr_Fetch_FDRSE                                               |MB_FDRSE_18                             |    38|
 |1064  |          \Serial_Dbg_Intf.SRL16E_1                                                                |MB_SRL16E__parameterized2               |     1|
 |1065  |          \Serial_Dbg_Intf.SRL16E_2                                                                |MB_SRL16E__parameterized4               |     1|
 |1066  |          \Serial_Dbg_Intf.SRL16E_3                                                                |MB_SRL16E__parameterized12              |     1|
-|1067  |          \Serial_Dbg_Intf.SRL16E_4                                                                |MB_SRL16E__parameterized14              |     5|
-|1068  |          \Serial_Dbg_Intf.The_Base_Vector[1].SRL16E_Base_Vector                                   |MB_SRL16E__parameterized10              |     2|
-|1069  |          \Serial_Dbg_Intf.The_Base_Vector[2].SRL16E_Base_Vector                                   |MB_SRL16E__parameterized10_19           |     1|
+|1067  |          \Serial_Dbg_Intf.SRL16E_4                                                                |MB_SRL16E__parameterized14              |     2|
+|1068  |          \Serial_Dbg_Intf.The_Base_Vector[1].SRL16E_Base_Vector                                   |MB_SRL16E__parameterized10              |     1|
+|1069  |          \Serial_Dbg_Intf.The_Base_Vector[2].SRL16E_Base_Vector                                   |MB_SRL16E__parameterized10_19           |     5|
 |1070  |          \Serial_Dbg_Intf.The_Cache_Addresses[1].SRL16E_Cache_I                                   |MB_SRL16E__parameterized6               |     1|
 |1071  |          \Serial_Dbg_Intf.The_Cache_Addresses[2].SRL16E_Cache_I                                   |MB_SRL16E__parameterized8               |     2|
 |1072  |          \Serial_Dbg_Intf.The_Cache_Addresses[3].SRL16E_Cache_I                                   |MB_SRL16E__parameterized10_20           |     1|
@@ -2071,10 +2069,10 @@ Report Instance Areas:
 |1076  |          \Serial_Dbg_Intf.The_Cache_Addresses[7].SRL16E_Cache_I                                   |MB_SRL16E__parameterized10_24           |     1|
 |1077  |          \Serial_Dbg_Intf.The_Cache_Addresses[8].SRL16E_Cache_I                                   |MB_SRL16E__parameterized10_25           |     1|
 |1078  |          \Serial_Dbg_Intf.sync_dbg_brk_hit                                                        |mb_sync_bit__parameterized2             |     1|
-|1079  |          \Serial_Dbg_Intf.sync_dbg_hit                                                            |mb_sync_vec                             |     2|
-|1080  |            \sync_bits[0].sync_bit                                                                 |mb_sync_bit__parameterized2_57          |     2|
+|1079  |          \Serial_Dbg_Intf.sync_dbg_hit                                                            |mb_sync_vec                             |     1|
+|1080  |            \sync_bits[0].sync_bit                                                                 |mb_sync_bit__parameterized2_57          |     1|
 |1081  |          \Serial_Dbg_Intf.sync_dbg_wakeup                                                         |mb_sync_bit__parameterized4             |     3|
-|1082  |          \Serial_Dbg_Intf.sync_pause                                                              |mb_sync_bit__parameterized2_26          |     1|
+|1082  |          \Serial_Dbg_Intf.sync_pause                                                              |mb_sync_bit__parameterized2_26          |     2|
 |1083  |          \Serial_Dbg_Intf.sync_running_clock                                                      |mb_sync_bit__parameterized2_27          |     1|
 |1084  |          \Serial_Dbg_Intf.sync_sample                                                             |mb_sync_vec__parameterized1             |    30|
 |1085  |            \sync_bits[0].sync_bit                                                                 |mb_sync_bit_47                          |     3|
@@ -2087,7 +2085,7 @@ Report Instance Areas:
 |1092  |            \sync_bits[7].sync_bit                                                                 |mb_sync_bit_54                          |     3|
 |1093  |            \sync_bits[8].sync_bit                                                                 |mb_sync_bit_55                          |     2|
 |1094  |            \sync_bits[9].sync_bit                                                                 |mb_sync_bit_56                          |     2|
-|1095  |          \Serial_Dbg_Intf.sync_sleep                                                              |mb_sync_bit__parameterized2_28          |     2|
+|1095  |          \Serial_Dbg_Intf.sync_sleep                                                              |mb_sync_bit__parameterized2_28          |     1|
 |1096  |          \Serial_Dbg_Intf.sync_stop_CPU                                                           |mb_sync_bit__parameterized2_29          |     1|
 |1097  |          \Using_PC_Breakpoints.All_PC_Brks[0].Serial_Interface_1.address_hit_I                    |address_hit                             |    20|
 |1098  |            \Compare[0].MUXCY_I                                                                    |MB_MUXCY                                |     1|
@@ -2109,7 +2107,7 @@ Report Instance Areas:
 |1114  |            \The_First_BreakPoints.MUXCY_Post                                                      |MB_MUXCY_46                             |     2|
 |1115  |          sync_trig_ack_in_0                                                                       |mb_sync_bit__parameterized4_30          |     2|
 |1116  |          sync_trig_out_0                                                                          |mb_sync_bit__parameterized4_31          |     2|
-|1117  |        \Using_Ext_Databus.DAXI_Interface_I1                                                       |DAXI_interface                          |   138|
+|1117  |        \Using_Ext_Databus.DAXI_Interface_I1                                                       |DAXI_interface                          |   141|
 |1118  |        instr_mux_I1                                                                               |instr_mux                               |    16|
 |1119  |          \Mux_LD.LD_inst                                                                          |mux_bus                                 |    16|
 |1120  |            \Mux_Loop[0].I_MUX_LUT6                                                                |MB_LUT6_2__parameterized4               |     1|
@@ -2133,17 +2131,17 @@ Report Instance Areas:
 |1138  |      \Using_Async_Wakeup_1.Wakeup_DFF                                                             |mb_sync_bit_1                           |     2|
 +------+---------------------------------------------------------------------------------------------------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 947.863 ; gain = 665.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:49 . Memory (MB): peak = 908.438 ; gain = 626.055
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9622 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:28 . Memory (MB): peak = 947.863 ; gain = 442.848
-Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 947.863 ; gain = 665.047
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:33 . Memory (MB): peak = 908.438 ; gain = 407.930
+Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 908.438 ; gain = 626.055
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 529 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 947.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 908.438 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 346 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 35 instances
@@ -2158,16 +2156,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 258 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:49 . Memory (MB): peak = 947.863 ; gain = 673.598
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 947.863 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 908.438 ; gain = 634.734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 908.438 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_0_0, cache-ID = 5f1a610d60eeb7b4
+INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_0_0, cache-ID = 6a0e686e3b6fb63a
 INFO: [Coretcl 2-1174] Renamed 1137 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 947.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 908.438 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_microblaze_0_0_utilization_synth.rpt -pb design_1_microblaze_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 16:37:51 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 16:53:38 2022...

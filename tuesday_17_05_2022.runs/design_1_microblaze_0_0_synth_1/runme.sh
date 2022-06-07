@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_microblaze_0_0_synth_1'
+HD_PWD='C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_microblaze_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Tue May 17 15:45:17 2022
+-- Date        : Tue May 24 16:52:38 2022
 -- Host        : DESKTOP-K73VVKB running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.vhdl
+--               C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.vhdl
 -- Design      : design_1_xbar_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
