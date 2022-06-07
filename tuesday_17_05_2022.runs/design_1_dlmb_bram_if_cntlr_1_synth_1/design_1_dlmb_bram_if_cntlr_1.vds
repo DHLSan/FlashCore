@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 16 16:34:48 2022
-# Process ID: 16428
-# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1
+# Start of session at: Tue May 24 16:51:22 2022
+# Process ID: 13232
+# Current directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1
 # Command line: vivado.exe -log design_1_dlmb_bram_if_cntlr_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_bram_if_cntlr_1.tcl
-# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.vds
-# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1\vivado.jou
+# Log file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.vds
+# Journal file: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_dlmb_bram_if_cntlr_1.tcl -notrace
 Command: synth_design -top design_1_dlmb_bram_if_cntlr_1 -part xc7z020clg484-1 -mode out_of_context
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7244 
+INFO: Helper process launched with PID 13504 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 378.828 ; gain = 101.336
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 378.945 ; gain = 100.219
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000011111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -43,8 +43,8 @@ INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [c:/User
 	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:225]
-INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000000011111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -80,8 +80,8 @@ INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/berke/Desk
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ECC bound to: 0 - type: integer 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
-INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
 	Parameter C_TARGET bound to: 3 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
@@ -95,15 +95,15 @@ INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/berke/Desktop/OKUL/S
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
-INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
-INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (4#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (4#1) [c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/synth/design_1_dlmb_bram_if_cntlr_1.vhd:84]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[0]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[2]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[3]
@@ -206,7 +206,7 @@ WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_ReadStrobe
 WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_WriteStrobe
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 436.984 ; gain = 159.492
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 436.992 ; gain = 158.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -219,47 +219,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 436.984 ; gain = 159.492
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 436.992 ; gain = 158.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 436.984 ; gain = 159.492
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 436.992 ; gain = 158.266
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 757.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 757.465 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 758.996 ; gain = 1.531
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 742.621 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 744.512 ; gain = 1.891
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 758.996 ; gain = 481.504
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 744.512 ; gain = 465.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 758.996 ; gain = 481.504
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 744.512 ; gain = 465.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 758.996 ; gain = 481.504
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 744.512 ; gain = 465.785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 758.996 ; gain = 481.504
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 744.512 ; gain = 465.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -300,8 +297,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design design_1_dlmb_bram_if_cntlr_1 has port Sl_Wait driven by constant 0
+INFO: [Synth 8-3917] design design_1_dlmb_bram_if_cntlr_1 has port Sl_UE driven by constant 0
+INFO: [Synth 8-3917] design design_1_dlmb_bram_if_cntlr_1 has port Sl_CE driven by constant 0
+INFO: [Synth 8-3917] design design_1_dlmb_bram_if_cntlr_1 has port BRAM_Rst_A driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 758.996 ; gain = 481.504
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 744.512 ; gain = 465.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -313,13 +314,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 786.023 ; gain = 508.531
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 781.430 ; gain = 502.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 786.023 ; gain = 508.531
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 781.504 ; gain = 502.777
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -331,7 +332,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -355,7 +356,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -368,7 +369,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -380,25 +381,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -427,30 +428,30 @@ Report Instance Areas:
 |2     |  U0     |lmb_bram_if_cntlr |     9|
 +------+---------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 795.680 ; gain = 518.188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 321 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 795.680 ; gain = 196.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 795.680 ; gain = 518.188
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 791.094 ; gain = 204.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 791.094 ; gain = 512.367
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.035 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.918 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+25 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 807.035 ; gain = 535.473
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.035 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 804.918 ; gain = 533.656
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.918 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dlmb_bram_if_cntlr_1, cache-ID = 9d029ef013b5d2c6
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.035 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dlmb_bram_if_cntlr_1, cache-ID = 26c668165194ba93
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.918 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/monday_16.05.2022/monday_16.05.2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.runs/design_1_dlmb_bram_if_cntlr_1_synth_1/design_1_dlmb_bram_if_cntlr_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_dlmb_bram_if_cntlr_1_utilization_synth.rpt -pb design_1_dlmb_bram_if_cntlr_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 16 16:35:37 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 16:52:16 2022...

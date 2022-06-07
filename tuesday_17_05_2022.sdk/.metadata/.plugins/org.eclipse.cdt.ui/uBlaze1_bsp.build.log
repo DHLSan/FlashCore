@@ -1,4 +1,4 @@
-14:37:48 **** Build of project uBlaze1_bsp ****
+17:07:37 **** Build of project uBlaze1_bsp ****
 make -k all 
 "Running Make include in microblaze_1/libsrc/bram_v4_2/src"
 make -C microblaze_1/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -33,5 +33,5 @@ microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly
          ^~~~~~~
 'Finished building libraries'
 
-14:37:52 Build Finished (took 4s.291ms)
+17:07:43 Build Finished (took 6s.485ms)
 

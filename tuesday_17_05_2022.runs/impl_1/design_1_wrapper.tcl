@@ -61,107 +61,19 @@ proc step_failed { step } {
 }
 
 
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  create_project -in_memory -part xc7z020clg484-1
-  set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.cache/wt [current_project]
-  set_property parent.project_path C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.xpr [current_project]
-  set_property ip_output_repo C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.runs/synth_1/design_1_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -limit 0
-  set_param project.isImplRun true
-  add_files C:/Users/berke/Desktop/OKUL/SoC/SoC_Project_Final/tuesday_17_05_2022/tuesday_17_05_2022.srcs/sources_1/bd/design_1/design_1.bd
-  set_param project.isImplRun false
-  set_param project.isImplRun true
-  link_design -top design_1_wrapper -part xc7z020clg484-1
-  set_param project.isImplRun false
-  write_hwdef -force -file design_1_wrapper.hwdef
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force design_1_wrapper_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-    implement_debug_core 
-  } 
-  place_design 
-  write_checkpoint -force design_1_wrapper_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file design_1_wrapper_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force design_1_wrapper_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx"
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force design_1_wrapper_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  open_checkpoint design_1_wrapper_routed.dcp
+  set_property webtalk.parent_dir C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
+  set_property SCOPED_TO_REF design_1 [get_files -all c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
+  set_property SCOPED_TO_CELLS microblaze_0 [get_files -all c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
+  add_files c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/data/mb_bootloop_le.elf
+  set_property SCOPED_TO_REF design_1 [get_files -all c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/data/mb_bootloop_le.elf]
+  set_property SCOPED_TO_CELLS microblaze_1 [get_files -all c:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/data/mb_bootloop_le.elf]
   catch { write_mem_info -force design_1_wrapper.mmi }
   catch { write_bmm -force design_1_wrapper_bd.bmm }
   write_bitstream -force design_1_wrapper.bit 

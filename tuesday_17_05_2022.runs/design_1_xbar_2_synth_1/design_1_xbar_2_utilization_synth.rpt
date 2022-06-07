@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May 16 16:38:37 2022
+| Date         : Tue May 24 16:54:13 2022
 | Host         : DESKTOP-K73VVKB running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_xbar_2_utilization_synth.rpt -pb design_1_xbar_2_utilization_synth.pb
 | Design       : design_1_xbar_2
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  190 |     0 |     53200 |  0.36 |
-|   LUT as Logic          |  190 |     0 |     53200 |  0.36 |
+| Slice LUTs*             |  183 |     0 |     53200 |  0.34 |
+|   LUT as Logic          |  183 |     0 |     53200 |  0.34 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |  136 |     0 |    106400 |  0.13 |
 |   Register as Flip Flop |  136 |     0 |    106400 |  0.13 |
@@ -148,10 +148,10 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |  135 |        Flop & Latch |
 | LUT5     |   80 |                 LUT |
-| LUT4     |   44 |                 LUT |
-| LUT3     |   44 |                 LUT |
-| LUT6     |   36 |                 LUT |
-| LUT2     |   15 |                 LUT |
+| LUT4     |   45 |                 LUT |
+| LUT3     |   45 |                 LUT |
+| LUT6     |   29 |                 LUT |
+| LUT2     |   14 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+

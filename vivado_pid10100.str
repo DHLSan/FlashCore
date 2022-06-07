@@ -1,0 +1,129 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 10100
+License: Customer
+
+Current time: 	Tue Jun 07 16:50:30 EET 2022
+Time zone: 	Eastern European Time (Asia/Istanbul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 82 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx_2018/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx_2018/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	berke
+User home directory: C:/Users/berke
+User working directory: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress
+User country: 	TR
+User language: 	tr
+User locale: 	tr_TR
+
+RDI_BASEROOT: C:/Xilinx_2018/Vivado
+HDI_APPROOT: C:/Xilinx_2018/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx_2018/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx_2018/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/berke/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/berke/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/berke/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx_2018/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/vivado.log
+Vivado journal file location: 	C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/vivado.jou
+Engine tmp dir: 	C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/.Xil/Vivado-10100-DESKTOP-K73VVKB
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx_2018/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx_2018/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx_2018/Vivado/2018.3
+XILINX_SDK: C:/Xilinx_2018/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx_2018/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx_2018/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 649 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\berke\Desktop\OKUL\SoC\SoC_Progress\tuesday_17_05_2022.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 45 MB. Current time: 6/7/22, 4:50:32 PM EET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105330kb) [00:00:13]
+// [Engine Memory]: 716 MB (+599120kb) [00:00:13]
+// [GUI Memory]: 115 MB (+6923kb) [00:00:15]
+// [Engine Memory]: 770 MB (+19628kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3553 ms.
+// Tcl Message: open_project C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_2018/Vivado/2018.3/data/ip'. 
+// [GUI Memory]: 126 MB (+6225kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  1599 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 806.105 ; gain = 192.723 
+// Project name: tuesday_17_05_2022; location: C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress; part: xc7z020clg484-1
+// [Engine Memory]: 1,271 MB (+484229kb) [00:00:20]
+// [GUI Memory]: 136 MB (+3048kb) [00:00:20]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceItoN.MainToolbarMgr_OPEN, (String) null); // aA (f, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk -hwspec C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk -hwspec C:/Users/berke/Desktop/OKUL/SoC/SoC_Progress/tuesday_17_05_2022.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
