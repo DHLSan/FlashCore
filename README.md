@@ -1,5 +1,7 @@
 # FlashCore
 
+***
+
 ## Abstract
 
 Multiprocessor systems-on-chips (MPSoCs) have widely adopted in many different applications [1] 
@@ -38,8 +40,24 @@ In conclusion, incorporating everything into our custom Microblaze-based MPSoC a
 design process can be difficult, and our main motivation is to overcome this design process considering
 every existing challenges.
 
+***
+
 # In Progress Work
-soon to be updated.
+When implementing a multi core solution, usually the
+current tasking is distributed among available cores in order to get the maximum performance out of each core. As
+a requirement to this operation, processors must communicate and share system resources safely and reliably.
+Inter processor communication, helps to conduct this process without causing conflict. Using mailboxes and
+mutexes is an efficient way of using system resources reliably. Therefore in the design prosess of the project, 
+mailbox and mutex IP cores was used. The hardware design is given in image below.
+
+![Final Hardware Design](final_design.jpeg)
+
+***
+
+# Results
+In order to see the acceleration with applying benchmarking, Monte Carlo Pi estimation algorithm was developed and applied for both the single core of MicroBlaze and multi core MicroBlaze. The results of the conducted work can be found in project progress report.
+
+***
 
 ## **_Participants_** ##
 - Zeynep Bilge
