@@ -1,0 +1,934 @@
+15:34:42 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:43 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+15:38:54 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+15:40:28 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10858	    288	   3126	  14272	   37c0	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+15:40:54 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:11 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10858	    288	   3126	  14272	   37c0	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:18:51 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:117:75: error: expected expression before '||' token
+       if((counter == 1500) || (counter == 150000) || (counter == 250000)) || (counter==500000){
+                                                                           ^~
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+make: *** [src/subdir.mk:23: src/monteCarlo_single_core.o] Error 1
+16:19:06 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:117:75: error: expected expression before '||' token
+       if((counter == 1500) || (counter == 150000) || (counter == 250000)) || (counter==500000)){
+                                                                           ^~
+../src/monteCarlo_single_core.c:117:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+       if((counter == 1500) || (counter == 150000) || (counter == 250000)) || (counter==500000)){
+       ^~
+../src/monteCarlo_single_core.c:117:95: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       if((counter == 1500) || (counter == 150000) || (counter == 250000)) || (counter==500000)){
+                                                                                               ^
+../src/monteCarlo_single_core.c:117:95: error: expected statement before ')' token
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+make: *** [src/subdir.mk:23: src/monteCarlo_single_core.o] Error 1
+16:19:49 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10874	    288	   3126	  14288	   37d0	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:20:00 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:07 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:126:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10858	    288	   3126	  14272	   37c0	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:21:29 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:129:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10902	    288	   3122	  14312	   37e8	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:21:35 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:130:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10918	    288	   3122	  14328	   37f8	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:21:42 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:23:17 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:131:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10946	    288	   3126	  14360	   3818	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:23:23 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:01 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:131:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10946	    288	   3126	  14360	   3818	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:35:06 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:11 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:131:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+../src/monteCarlo_single_core.c:108:10: warning: unused variable 'pi2' [-Wunused-variable]
+    float pi2=0;
+          ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10994	    288	   3126	  14408	   3848	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:36:16 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+16:46:54 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:131:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+../src/monteCarlo_single_core.c:140:8: warning: unused variable 'ondalik' [-Wunused-variable]
+    int ondalik= ((int)(pi*100))%300;
+        ^~~~~~~
+../src/monteCarlo_single_core.c:108:10: warning: unused variable 'pi2' [-Wunused-variable]
+    float pi2=0;
+          ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11274	    288	   3126	  14688	   3960	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:47:05 **** Auto Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+'Building file: ../src/monteCarlo_single_core.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_single_core.o" -I../../monteCarlo_single_core_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_single_core.d" -MT"src/monteCarlo_single_core.o" -o "src/monteCarlo_single_core.o" "../src/monteCarlo_single_core.c"
+../src/monteCarlo_single_core.c: In function 'main':
+../src/monteCarlo_single_core.c:119:8: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+        sleep(5);
+        ^~~~~
+        strsep
+../src/monteCarlo_single_core.c:131:13: warning: unused variable 'pi2' [-Wunused-variable]
+       float pi2=4*in_count/tot_count;
+             ^~~
+../src/monteCarlo_single_core.c:108:10: warning: unused variable 'pi2' [-Wunused-variable]
+    float pi2=0;
+          ^~~
+'Finished building: ../src/monteCarlo_single_core.c'
+' '
+'Building target: monteCarlo_single_core.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_single_core_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_single_core.elf"  ./src/monteCarlo_single_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_single_core.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_single_core.elf  |tee "monteCarlo_single_core.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11306	    288	   3126	  14720	   3980	monteCarlo_single_core.elf
+'Finished building: monteCarlo_single_core.elf.size'
+' '
+16:52:44 **** Incremental Build of configuration Debug for project monteCarlo_single_core ****
+make all 
+make: Nothing to be done for 'all'.
+17:05:39 **** Build of project monteCarlo_uBlaze0_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/mutex_v4_3/src"
+make -C microblaze_0/libsrc/mutex_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/mutex_v4_3/src"
+make -C microblaze_0/libsrc/mutex_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling mutex"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+
+**** Build of configuration Debug for project monteCarlo_uBlaze0 ****
+
+Nothing to build for project monteCarlo_uBlaze0
+17:05:59 **** Build of project monteCarlo_uBlaze1_bsp ****
+make -k all 
+"Running Make include in microblaze_1/libsrc/bram_v4_2/src"
+make -C microblaze_1/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/cpu_v2_8/src"
+make -C microblaze_1/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/mutex_v4_3/src"
+make -C microblaze_1/libsrc/mutex_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_1/libsrc/standalone_v6_8/src"
+make -C microblaze_1/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_1/libsrc/bram_v4_2/src"
+make -C microblaze_1/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_1/libsrc/cpu_v2_8/src"
+make -C microblaze_1/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_1/libsrc/mutex_v4_3/src"
+make -C microblaze_1/libsrc/mutex_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling mutex"
+"Running Make libs in microblaze_1/libsrc/standalone_v6_8/src"
+make -C microblaze_1/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+
+**** Build of configuration Debug for project monteCarlo_uBlaze1 ****
+
+Nothing to build for project monteCarlo_uBlaze1
+17:07:08 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx_2018/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/bs/le/m/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: monteCarlo_uBlaze0.elf] Error 1
+17:07:11 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:126:10: warning: unused variable 'final_result' [-Wunused-variable]
+    float final_result;
+          ^~~~~~~~~~~~
+../src/monteCarlo_uBlaze0.c:125:10: warning: unused variable 'value2' [-Wunused-variable]
+    float value2;
+          ^~~~~~
+../src/monteCarlo_uBlaze0.c:124:10: warning: unused variable 'value1' [-Wunused-variable]
+    float value1;
+          ^~~~~~
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12206	    492	   3126	  15824	   3dd0	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:09:14 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:113:6: error: unknown type name 'XGpio'
+      XGpio Gpio;
+      ^~~~~
+../src/monteCarlo_uBlaze0.c:122:8: warning: unused variable 'tot_iterations' [-Wunused-variable]
+    int tot_iterations=500000/2;
+        ^~~~~~~~~~~~~~
+../src/monteCarlo_uBlaze0.c:113:12: warning: unused variable 'Gpio' [-Wunused-variable]
+      XGpio Gpio;
+            ^~~~
+make: *** [src/subdir.mk:23: src/monteCarlo_uBlaze0.o] Error 1
+17:09:37 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:123:8: warning: unused variable 'tot_iterations' [-Wunused-variable]
+    int tot_iterations=500000/2;
+        ^~~~~~~~~~~~~~
+../src/monteCarlo_uBlaze0.c:114:12: warning: unused variable 'Gpio' [-Wunused-variable]
+      XGpio Gpio;
+            ^~~~
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12718	    492	   3126	  16336	   3fd0	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:10:29 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx_2018/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/bs/le/m/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: monteCarlo_uBlaze1.elf] Error 1
+17:10:32 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze1.elf  |tee "monteCarlo_uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12394	    492	   3130	  16016	   3e90	monteCarlo_uBlaze1.elf
+'Finished building: monteCarlo_uBlaze1.elf.size'
+' '
+17:10:45 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze1.elf  |tee "monteCarlo_uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12394	    492	   3130	  16016	   3e90	monteCarlo_uBlaze1.elf
+'Finished building: monteCarlo_uBlaze1.elf.size'
+' '
+17:12:41 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:121:12: error: redeclaration of 'Gpio' with no linkage
+      XGpio Gpio;
+            ^~~~
+../src/monteCarlo_uBlaze0.c:114:12: note: previous declaration of 'Gpio' was here
+      XGpio Gpio;
+            ^~~~
+../src/monteCarlo_uBlaze0.c:131:8: warning: unused variable 'tot_iterations' [-Wunused-variable]
+    int tot_iterations=500000/2;
+        ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/monteCarlo_uBlaze0.o] Error 1
+17:12:54 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:130:8: warning: unused variable 'tot_iterations' [-Wunused-variable]
+    int tot_iterations=500000/2;
+        ^~~~~~~~~~~~~~
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13438	    508	   3126	  17072	   42b0	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:13:12 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:130:8: warning: unused variable 'tot_iterations' [-Wunused-variable]
+    int tot_iterations=500000/2;
+        ^~~~~~~~~~~~~~
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13438	    508	   3126	  17072	   42b0	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:14:17 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13434	    508	   3130	  17072	   42b0	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:17:34 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:139:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13846	    508	   3126	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:18:24 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:24 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:36:16 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:125:8: error: expected ';' before 'XMutex_Unlock'
+        XMutex_Unlock(&Mutex,0);
+        ^~~~~~~~~~~~~
+../src/monteCarlo_uBlaze0.c:140:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+make: *** [src/subdir.mk:23: src/monteCarlo_uBlaze0.o] Error 1
+17:36:22 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:140:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13846	    508	   3126	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:37:08 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:141:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13846	    508	   3126	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:38:07 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+In file included from ../../monteCarlo_uBlaze1_bsp/microblaze_1/include/xbram.h:135:0,
+                 from ../src/monteCarlo_uBlaze1.c:5:
+../src/monteCarlo_uBlaze1.c: In function 'main':
+../../monteCarlo_uBlaze1_bsp/microblaze_1/include/xbram_hw.h:350:21: error: expected ';' before 'Xil_Out32'
+ #define XBram_Out32 Xil_Out32
+                     ^
+../src/monteCarlo_uBlaze1.c:132:5: note: in expansion of macro 'XBram_Out32'
+     XBram_Out32(0xc0000000 +40, 100)
+     ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/monteCarlo_uBlaze1.o] Error 1
+17:38:12 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze1.elf  |tee "monteCarlo_uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12394	    492	   3130	  16016	   3e90	monteCarlo_uBlaze1.elf
+'Finished building: monteCarlo_uBlaze1.elf.size'
+' '
+17:39:00 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:141:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13842	    508	   3130	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:39:11 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze1.elf  |tee "monteCarlo_uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12390	    492	   3126	  16008	   3e88	monteCarlo_uBlaze1.elf
+'Finished building: monteCarlo_uBlaze1.elf.size'
+' '
+17:39:22 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:39:22 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:49:58 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:141:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13842	    508	   3130	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:50:09 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:10 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:19 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:50:20 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:51:02 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:51:02 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:53:07 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:53:08 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:53:18 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:53:19 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:54:56 **** Auto Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze0.o" -I../../monteCarlo_uBlaze0_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze0.d" -MT"src/monteCarlo_uBlaze0.o" -o "src/monteCarlo_uBlaze0.o" "../src/monteCarlo_uBlaze0.c"
+../src/monteCarlo_uBlaze0.c: In function 'main':
+../src/monteCarlo_uBlaze0.c:141:12: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+            sleep(6);
+            ^~~~~
+            strsep
+'Finished building: ../src/monteCarlo_uBlaze0.c'
+' '
+'Building target: monteCarlo_uBlaze0.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze0_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze0.elf"  ./src/monteCarlo_uBlaze0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze0.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze0.elf  |tee "monteCarlo_uBlaze0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13846	    508	   3126	  17480	   4448	monteCarlo_uBlaze0.elf
+'Finished building: monteCarlo_uBlaze0.elf.size'
+' '
+17:54:58 **** Auto Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+'Building file: ../src/monteCarlo_uBlaze1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monteCarlo_uBlaze1.o" -I../../monteCarlo_uBlaze1_bsp/microblaze_1/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monteCarlo_uBlaze1.d" -MT"src/monteCarlo_uBlaze1.o" -o "src/monteCarlo_uBlaze1.o" "../src/monteCarlo_uBlaze1.c"
+'Finished building: ../src/monteCarlo_uBlaze1.c'
+' '
+'Building target: monteCarlo_uBlaze1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../monteCarlo_uBlaze1_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "monteCarlo_uBlaze1.elf"  ./src/monteCarlo_uBlaze1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: monteCarlo_uBlaze1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size monteCarlo_uBlaze1.elf  |tee "monteCarlo_uBlaze1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12394	    492	   3130	  16016	   3e90	monteCarlo_uBlaze1.elf
+'Finished building: monteCarlo_uBlaze1.elf.size'
+' '
+17:58:49 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+17:58:50 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:08:26 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze0 ****
+make all 
+make: Nothing to be done for 'all'.
+18:08:27 **** Incremental Build of configuration Debug for project monteCarlo_uBlaze1 ****
+make all 
+make: Nothing to be done for 'all'.
