@@ -5,6 +5,8 @@ FlashCore: Multi-Microblaze based System-on-Chip design and evaluate it with mul
 Team Number: xohw22-112
 
 This project was carried out within the scope of the EEM464 course at the Department of Electrical and Electronics Engineering at Eskişehir Technical University.
+The experiments were conducted on Zedboard Zynq Evaluation and Development Kit.
+Software version is Xilinx Vivado 2018.3
 
 ***
 
