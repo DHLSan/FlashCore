@@ -1,5 +1,11 @@
 # FlashCore
 
+FlashCore: Multi-Microblaze based System-on-Chip design and evaluate it with multi-threaded benchmarks
+
+Team Number: xohw22-112
+
+This project was carried out within the scope of the EEM464 course at the Department of Electrical and Electronics Engineering at Eskişehir Technical University.
+
 ***
 
 ## Abstract
@@ -42,15 +48,14 @@ every existing challenges.
 
 ***
 
+### GitHub Link : https://github.com/DHLSan/FlashCore
+### YouTube Link : 
+
 # In Progress Work
-When implementing a multi core solution, usually the
-current tasking is distributed among available cores in order to get the maximum performance out of each core. As
-a requirement to this operation, processors must communicate and share system resources safely and reliably.
-Inter processor communication, helps to conduct this process without causing conflict. Using mailboxes and
-mutexes is an efficient way of using system resources reliably. Therefore in the design prosess of the project, 
+When implementing a multi core solution, usually the current tasking is distributed among available cores in order to get the maximum performance out of each core. As a requirement to this operation, processors must communicate and share system resources safely and reliably. Inter processor communication, helps to conduct this process without causing conflict. Using mailboxes and mutexes is an efficient way of using system resources reliably. Therefore in the design prosess of the project, 
 mailbox and mutex IP cores was used. The hardware design is given in image below.
 
-![Final Hardware Design](final_design.jpeg)
+![Final Hardware Design](./Images/final_design.jpeg)
 
 ***
 
