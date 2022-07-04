@@ -62,7 +62,7 @@ mailbox and mutex IP cores was used. The hardware design is given in image below
 ***
 
 # Results
-In order to see the acceleration with applying benchmarking, Monte Carlo Pi estimation algorithm was developed and applied for both the single core of MicroBlaze and multi core MicroBlaze. The results of the conducted work can be found in project progress report.
+In order to see the acceleration with applying benchmarking, Monte Carlo Pi estimation algorithm was developed and applied for both the single core of MicroBlaze and multi core MicroBlaze. Testing of the final progress of the project can be made by running experiment 3. The results of the conducted work can be found in project progress report.
 
 ***
 

@@ -4,7 +4,7 @@
 
 ## Multi core Microblaze with Mutex IP core
 
-This experiment was conducted in order to investigate usage of multi microblaze processor cores. There are two source files added in the experiment for each microblaze core. They are designed to run two application at the same time like the experiment one. Only realization of mutex IP core was experimented.
+This experiments was conducted in order to investigate usage of multi microblaze processor cores. There are two source files added in the experiment under application files for each microblaze core. They are designed to run two application at the same time like the experiment one. Only realization of mutex IP core was experimented.
 
 ### Step-by-step Build Instructions
 
