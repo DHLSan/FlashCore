@@ -51,7 +51,7 @@ every existing challenges.
 ***
 
 ### GitHub Link : https://github.com/DHLSan/FlashCore
-### YouTube Link : 
+### YouTube Link : https://youtu.be/WHOWx3jlIoo
 
 # In Progress Work
 When implementing a multi core solution, usually the current tasking is distributed among available cores in order to get the maximum performance out of each core. As a requirement to this operation, processors must communicate and share system resources safely and reliably. Inter processor communication, helps to conduct this process without causing conflict. Using mailboxes and mutexes is an efficient way of using system resources reliably. Therefore in the design prosess of the project, 
